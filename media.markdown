@@ -5,4 +5,4 @@ description: "This is what I do."
 header-img: "img/home-bg.jpg"
 ---
 
-Coming soon!
+Please refer back later!
