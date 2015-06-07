@@ -7,7 +7,7 @@ header-img: "img/home-bg.jpg"
 
 # Publications by Dr. Michael Mulligan
 
-(selected from over 200)
+selection from over 200
 
 * Mulligan MS, Varani J, Dame MK, Lane CL, Smith CW, Anderson DC, Ward PA. Role of ELAM-1 in Neutrophil-Mediated Lung Injury in Rats. J Clin Invest 1991, 88:1396-1406.
 
