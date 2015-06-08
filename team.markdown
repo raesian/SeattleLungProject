@@ -12,7 +12,7 @@ header-img: "img/home-bg.jpg"
 
 ### Professor, Division of Cardiothoracic Surgery
 
-#### Director of the Lung Transplant Program and the Advanced Lung Disease Surgery Program
+### Director of the Lung Transplant Program and the Advanced Lung Disease Surgery Program
 
 Dr. Mulligan is a UW professor of cardiothoracic surgery and the director of the Lung Transplant Program and the Advanced Lung Disease Surgery Program. He is clinically busy in lung transplantation and lung volume reduction surgery (LVRS). He also is the surgeon in the Pacific Northwest who performs pulmonary endarterectomies for chronic pulmonary embolic disease.
 
