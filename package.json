@@ -6,7 +6,7 @@
     "author": "",
     "license": {
         "type": "Apache 2.0",
-        "url": "https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE"
+        "url": "https://github.com/raesian/SeattleLungProject/blob/gh-pages/LICENSE"
     },
     "devDependencies": {
         "grunt": "~0.4.5",
@@ -17,6 +17,6 @@
     },
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/raesian/SeattleLungProject.git"
     }
 }
