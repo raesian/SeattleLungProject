@@ -44,6 +44,14 @@ module.exports = function(grunt) {
                 }
             }
         },
+        jekyll: {
+            serve: {
+                options: {
+                    serve: true,
+                    watch: true
+                }
+            }
+        },
         watch: {
             scripts: {
                 files: ['js/<%= pkg.name %>.js'],
@@ -60,6 +68,14 @@ module.exports = function(grunt) {
                 }
             },
         },
+        concurrent: {
+            all: {
+                tasks: ['jekyll:serve', 'watch'],
+                options: {
+                    logConcurrentOutput: true
+                }
+            }
+        }
     });
 
     // Load the plugins.
@@ -67,8 +83,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-jekyll');
+    grunt.loadNpmTasks('grunt-concurrent');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
+    grunt.registerTask('default', ['uglify', 'less', 'usebanner', 'concurrent:all']);
 
 };
