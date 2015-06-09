@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Publications"
-description: "This is what I do."
+description: "Published works from our team"
 header-img: "img/home-bg.jpg"
 ---
 

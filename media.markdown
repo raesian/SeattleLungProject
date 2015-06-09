@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Media"
-description: "This is what I do."
+description: "Videos and Images"
 header-img: "img/home-bg.jpg"
 ---
 
-Please refer back later!
+<iframe width="640" height="360" src="https://www.youtube.com/embed/dginP2oe5DE?rel=0" frameborder="0" allowfullscreen></iframe>

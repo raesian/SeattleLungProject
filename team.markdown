@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Team"
-description: "About"
+description: "About Us"
 header-img: "img/home-bg.jpg"
 ---
 <img src="{{ site.baseurl }}/img/MMulliganProfile.png" width="275px" />
@@ -61,7 +61,9 @@ She has been involved with research since October 2013. Her interests include da
 
 ### Student
 
-Joseph Semeiuk is an undergraduate student at Seattle University studying biology and pre-medicine. In the future, he seeks to attend medical school to become an emergency & trauma physician or desires to work towards the creation or artificial organs.
+Joseph Semeiuk is an undergraduate student at Seattle University studying biology and pre-medicine. In the future, he seeks to attend medical school to become an emergency & trauma physician or desires to work towards the creation of artificial organs.
+
+<br/>
 
 # Collaborators
 
@@ -71,7 +73,7 @@ Joseph Semeiuk is an undergraduate student at Seattle University studying biolog
 
 ### Associate Chair and Professor of Medicine (University of Washington)
 
-W. Conrad Liles, MD, PhD is currently Professor and Associate Chair of Medicine and holds adjunct appointments in the Departments of Global Health and Pathology. He graduated magna cum laude from Williams College, then entered the National Institutes of Health - sponsored MD-PhD program at the University of Washington and graduated in 1987 with an MD and PhD in pharmacology. In 2006, Dr. Liles moved to the University of Toronto to assume the position of Director of the Division of Infectious Diseases, where he worked to develop translational research programs in sepsis, emerging infectious diseases and infectious diseases of public health importance, including malaria and sepsis. In 2012, he returned to the University of Washington as Associate Chair of Medicine. He currently serves as the Interim Director of the Center for Lung Biology, Co-Director of the Molecular Medicine Training Program, Co-Director of the Molecular Medicine and Mechanisms of Disease (M3D) PhD Graduate Program, and a member of the Center for Emerging and Re-emerging Infectious Diseases (CERID).
+W. Conrad Liles, MD, PhD is currently Professor and Associate Chair of Medicine and holds adjunct appointments in the Departments of Global Health and Pathology. He graduated from the University of Washington in 1987 with an MD and PhD in Pharmacology. In 2006, Dr. Liles moved to the University of Toronto to assume the position of Director of the Division of Infectious Diseases, where he worked to develop translational research programs in sepsis, emerging infectious diseases, and infectious diseases of public health importance, including malaria and sepsis. In 2012, he returned to the University of Washington as Associate Chair of Medicine. He currently serves as the Interim Director of the Center for Lung Biology, Co-Director of the Molecular Medicine Training Program, Co-Director of the Molecular Medicine and Mechanisms of Disease (M3D) PhD Graduate Program, and a member of the Center for Emerging and Re-emerging Infectious Diseases (CERID).
 
 Dr. Liles maintains an active translational research program as a principal investigator in host defense, infectious diseases, inflammation, innate immunity, sepsis, immunodeficiency disorders, and immunomodulatory therapy.
 

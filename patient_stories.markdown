@@ -1,8 +1,14 @@
 ---
 layout: page
 title: "Patient Stories"
-description: "This is what I do."
+description: "Hear how we can help make a change"
 header-img: "img/home-bg.jpg"
 ---
 
-Coming soon!
+## Patient Zero
+
+Here's the story and maybe a picture will go here as well.
+
+## Patient 387
+
+Another heartbreaking story about life

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Project"
-description: "This is what I do."
+title: "Projects"
+description: "Goals and Interests"
 header-img: "img/home-bg.jpg"
 ---
 
@@ -16,6 +16,8 @@ Research goals include:
 3. Identifying the regulatory pathways that drive ischemic tolerance.
 
 # Funding
+
+#### Currently our research is made possible by these organizations:
 
 * Bayer Institute for Health Care Communication
 
