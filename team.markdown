@@ -28,7 +28,7 @@ He has won local and national teaching awards and runs an NIH-funded laboratory.
 
 ### Research Scientist / Baby PI
 
-Billanna (Billie) is currently a Research Scientist and baby PI under the direction/training of Dr. Michael S. Mulligan. She received her BS in Biology at Seattle University, furthered her studies by obtaining an MPH, and now completing her doctorate. Her research background is in bone marrow and solid organ transplant immunology, with focus in tolerance induction/mechanisms, GVHD, and regulatory T cells. Majority of her research history has been at Fred Hutchinson Cancer Research Center and she continues to do collaborative research with those investigators. She continues her research using cell immunotherapy in pulmonary diseases and as a platform for tolerance induction in a solid organ transplant setting. Outside of research she continues to play volleyball at the top level in the region and runs a volleyball club/training program.
+Billanna (Billie) is currently a Research Scientist and baby PI under the direction/training of Dr. Michael S. Mulligan. She received her BS in Biology at Seattle University, furthered her studies by obtaining an MPH, and now completing her doctorate. Her research background is in bone marrow and solid organ transplant immunology with focus in tolerance induction/mechanisms, GVHD, and regulatory T cells. Majority of her research history has been at Fred Hutchinson Cancer Research Center and she continues to do collaborative research with those investigators. She continues her research using cell immunotherapy in pulmonary diseases and as a platform for tolerance induction in a solid organ transplant setting. Outside of research she continues to play volleyball at the top level in the region and runs a volleyball club/training program.
 
 <img src="{{ site.baseurl }}/img/BBeardProfile.png" width="200px" />
 
@@ -44,24 +44,15 @@ Brian received his B.A. in biology with a minor in chemistry from the University
 
 ### Research Scientist
 
-Rachel joined the Mulligan Lab in 2014 and began assisting in hematology counts and ventilation protocols. She originally came from the Fred Hutchinson Cancer Research Center learning about hematology in various bone marrow transplants and also worked with the HIV Vaccine Trails unit. Afterwards, she moved to the Center of Lung Biology researching the effects of mechanical ventilation. Rachel continues to help support the Transplantation Biology group at FHCRC. She graduated from the University of Washington with a B.S. in MCD Biology and is planning to continue on to graduate studies.
+Rachel joined the Mulligan Lab in 2014 and began assisting in hematology counts and ventilation protocols. She originally came from the Fred Hutchinson Cancer Research Center learning about hematology in various bone marrow transplants and also worked with the HIV Vaccine Trails unit. Afterwards, she moved to the Center of Lung Biology researching the effects of mechanical ventilation. Rachel continues to help support the Transplantation Biology group at FHCRC. She graduated from the University of Washington with a B.S. in MCD Biology and is currently studying for her MPH.
 
 <img src="{{ site.baseurl }}/img/SMaskalProfile.png" width="200px" />
 
 ## Sara Maskal
 
-### Student
+### Intern
 
-Sara Maskal is a graduating senior at University of Washington with a B.S. in Biochemistry with departmental honors and a minor in Dance. She plans to attend medical school.
-She has been involved with research since October 2013. Her interests include dance, tennis, a cappella, and piano.
-
-<img src="{{ site.baseurl }}/img/JSemeiukProfile.png" width="200px" />
-
-## Joseph Semeiuk
-
-### Student
-
-Joseph Semeiuk is an undergraduate student at Seattle University studying biology and pre-medicine. In the future, he seeks to attend medical school to become an emergency & trauma physician or desires to work towards the creation of artificial organs.
+Sara Maskal graduated from the University of Washington with a B.S. in Biochemistry with departmental honors and a minor in Dance. She will be attending medical school at Case Western Reserve University in Cleveland, Ohio for Autumn 2016. She has been involved with research since October 2013. Her interests include dance, tennis, a cappella, and piano.
 
 <br/>
 
@@ -75,13 +66,13 @@ Joseph Semeiuk is an undergraduate student at Seattle University studying biolog
 
 W. Conrad Liles, MD, PhD is currently Professor and Associate Chair of Medicine and holds adjunct appointments in the Departments of Global Health and Pathology. He graduated from the University of Washington in 1987 with an MD and PhD in Pharmacology. In 2006, Dr. Liles moved to the University of Toronto to assume the position of Director of the Division of Infectious Diseases, where he worked to develop translational research programs in sepsis, emerging infectious diseases, and infectious diseases of public health importance, including malaria and sepsis. In 2012, he returned to the University of Washington as Associate Chair of Medicine. He currently serves as the Interim Director of the Center for Lung Biology, Co-Director of the Molecular Medicine Training Program, Co-Director of the Molecular Medicine and Mechanisms of Disease (M3D) PhD Graduate Program, and a member of the Center for Emerging and Re-emerging Infectious Diseases (CERID).
 
-Dr. Liles maintains an active translational research program as a principal investigator in host defense, infectious diseases, inflammation, innate immunity, sepsis, immunodeficiency disorders, and immunomodulatory therapy.
-
-He received the 2004 Outstanding Investigator Award from the Western Society for Clinical Investigation (WSCI) and has been elected to Fellowship in the American College of Physicians (ACP) and the Infectious Diseases Society of America (IDSA). In 2014, he was elected to the Association of American Physicians (AAP).
+Dr. Liles maintains an active translational research program as a principal investigator in host defense, infectious diseases, inflammation, innate immunity, sepsis, immunodeficiency disorders, and immunomodulatory therapy. He received the 2004 Outstanding Investigator Award from the Western Society for Clinical Investigation (WSCI) and has been elected to Fellowship in the American College of Physicians (ACP) and the Infectious Diseases Society of America (IDSA). In 2014, he was elected to the Association of American Physicians (AAP).
 
 ## Farhood Farjah, MD, MPH
 
 ### Assistant Professor, Department of Surgery (University of Washington)
+
+Dr. Farjah trained at Memorial Sloan-Kettering Cancer Center in Cardiothracic Surgery and University of Washington in General Surgery. He obtained a M.S. in Epidemiology.
 
 ## David Mathes, MD 
 
