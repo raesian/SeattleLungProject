@@ -54,7 +54,7 @@ Brian received his B.A. in biology with a minor in chemistry from the University
 
 Rachel joined the Mulligan Lab in 2014 and began assisting in hematology counts and ventilation protocols. She originally came from the Fred Hutchinson Cancer Research Center learning about hematology in various bone marrow transplants and also worked with the HIV Vaccine Trails unit. Afterwards, she moved to the Center of Lung Biology researching the effects of mechanical ventilation. Rachel continues to help support the Transplantation Biology group at FHCRC. She graduated from the University of Washington with a B.S. in MCD Biology and is currently studying for her MPH.
 
-<img src="{{ site.baseurl }}/img/SMaskalProfile.jpeg" width="200px" />
+<img src="{{ site.baseurl }}/img/SMaskalProfile.jpg" width="200px" />
 
 ## Sara Maskal
 
@@ -62,7 +62,7 @@ Rachel joined the Mulligan Lab in 2014 and began assisting in hematology counts 
 
 Sara Maskal graduated from the University of Washington with a B.S. in Biochemistry with departmental honors and a minor in Dance. Sara assisted in the lab since early 2015. She is a first-year medical student, contributing from afar at Case Western Reserve University. Her interests include dance, tennis, a cappella, and piano.
 
-<img src="{{ site.baseurl }}/img/TMaxwellProfile.jpeg" width="200px" />
+<img src="{{ site.baseurl }}/img/TMaxwellProfile.jpg" width="200px" />
 
 ## Tim Maxwell
 
@@ -73,7 +73,9 @@ Tim is originally from Salt Lake City, Utah. After he married Whitney Maxwell in
 ## Students
 
 ### An Tran
+
 ### Emmah Ferguson
+
 <br/>
 
 # Collaborators
