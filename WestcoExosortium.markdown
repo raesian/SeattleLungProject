@@ -5,7 +5,7 @@ description: "West Coast Exosome Consortium"
 header-img: "img/home-bg.jpg"
 ---
 
-#Members
+# Members
 
 <img src="{{ site.baseurl }}/img/JohnathonAndersonProfile.jpg" width="200px" />
 
