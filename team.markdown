@@ -30,6 +30,8 @@ He has won local and national teaching awards and runs an NIH-funded laboratory.
 
 Billanna (Billie) is currently a Research Scientist and baby PI under the direction/training of Dr. Michael S. Mulligan. She received her BS in Biology at Seattle University, furthered her studies by obtaining an MPH, and now completing her doctorate. Her research background is in bone marrow and solid organ transplant immunology with focus in tolerance induction/mechanisms, GVHD, and regulatory T cells. Majority of her research history has been at Fred Hutchinson Cancer Research Center and she continues to do collaborative research with those investigators. She continues her research using cell immunotherapy in pulmonary diseases and as a platform for tolerance induction in a solid organ transplant setting. Outside of research she continues to play volleyball at the top level in the region and runs a volleyball club/training program.
 
+<img src="{{ site.baseurl }}/img/PSanchezProfile.jpg" width="200px" />
+
 ## Pablo Sanchez, MD
 
 ### Acting Assistant Professor
