@@ -1,6 +1,6 @@
 /*!
  * Seattle Lung Project v1.0.0 ()
- * Copyright 2018 
+ * Copyright 2019 
  * Licensed under Apache 2.0 (https://github.com/raesian/SeattleLungProject/blob/gh-pages/LICENSE)
  */
 
