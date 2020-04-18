@@ -7,7 +7,7 @@ header-img: "img/home-bg.jpg"
 
 # Research Goals
 
-Research goals include:
+Our research goals include:
 
 1. Characterizing the role of toll like receptors in lung ischemia reperfusion injury
 
