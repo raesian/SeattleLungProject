@@ -154,7 +154,7 @@ David got his BA and MS at Johns Hopkins University and his MD at Harvard Medica
 
 ## Eric Morrell, MD
 
-### Senior Fellow in Pulmonary, Critical Care, and Sleep Medicine (University of Virginia)
+### Senior Fellow in Pulmonary, Critical Care, and Sleep Medicine (University of Washington)
 
 Eric is interested in alveolar immunology of ARDS and lung allograft rejection.
 
