@@ -150,13 +150,6 @@ David got his BA and MS at Johns Hopkins University and his MD at Harvard Medica
 ### Cardiothoracic Surgery Fellow (University of Virginia)
 ### General Surgery Chief Resident (University of Washington)
 
-<img src="{{ site.baseurl }}/img/EricMorrellProfile.jpg" width="200px" />
-
-## Eric Morrell, MD
-
-### Senior Fellow in Pulmonary, Critical Care, and Sleep Medicine (University of Washington)
-
-Eric is interested in alveolar immunology of ARDS and lung allograft rejection.
 
 <br/>
 
