@@ -25,7 +25,7 @@ Generate an ssh key that you can associate with your github account. See [github
 - Run `bundle install` - ensure it's successful
 
 # How this website works
-It runs on (github pages)[https://pages.github.com/]
+It runs on [github pages](https://pages.github.com/)
 
 It uses [Jekyll](https://jekyllrb.com/) the static site generator.
 
@@ -39,7 +39,7 @@ This workflow covers making changes on your local computer, verifying them, and 
 2. Note the "Server address: " line in the terminal output. Navigate to that URL in your web browser.
 3. Make the modifications you want to make.
 4. Ensure they look okay in your local browser.
-5. Stage any changes you've made with `git stage`.
+5. Stage any changes you've made with `git add`.
 6. Commit your staged changes with `git commit`
 7. Once you're happy and want to go "live" you can `git push`
 
