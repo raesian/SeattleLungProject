@@ -1,4 +1,14 @@
 # One-time machine setup
+## A text editor
+Install a text editor. Notepad++, sublime text, vim, notepad, emacs, atom, whatever your heart desires.
+
+## Using a terminal
+You'll be doing much of the following in a terminal. If you're on windows, use "Powershell".
+
+Commands that will be useful:
+- `cd` - to change directories
+- `ls` - to list the contents of a directory
+
 ## ruby
 Download and install [ruby](https://www.ruby-lang.org/en/documentation/installation/) on your local computer.
 
@@ -10,7 +20,7 @@ I also hear the [github desktop](https://desktop.github.com/) tool is pretty nic
 ## github
 Create an account on [github](https://github.com/).
 
-Have sure Rae give you developer [Write access](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects#granting-a-collaborator-access-to-your-project) to the [SeattleLungProject Project](https://github.com/raesian/SeattleLungProject)
+Have sure Rachel give you developer [Write access](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects#granting-a-collaborator-access-to-your-project) to the [SeattleLungProject Project](https://github.com/raesian/SeattleLungProject)
 
 ## SSH
 Install [SSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui) on your local computer.
