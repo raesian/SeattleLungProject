@@ -135,7 +135,7 @@ These are a selection of the most recent publications our team has published.
     .card-button {
         background-color: transparent;
         border: 1px solid white;
-        border-radius: 4px;
+        border-radius: 1px;
         color: white;
         padding: 10px 20px;
         cursor: pointer;

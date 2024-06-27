@@ -2,17 +2,192 @@
 layout: page
 description: 
 ---
-<center><img src="{{ site.baseurl }}/img/Seattle_Lung_Project_small.png" width="300px"/></center>
+<!--<center><img src="{{ site.baseurl }}/img/Seattle_Lung_Project_small.png" width="300px"/></center>-->
 
-<h1>Our Mission</h2>
+<div style="background-color:#aaaaaa; height:3px"></div>
+<center>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="../img/MulliganLabPhoto1.png" alt="topic 1">
+            </div>
+            <div class="card-content" style="background-color:#888888">
+                <h4>topic topic topic topic 1</h4>
+                <p>topic topic topic topic topic topic</p>
+                <div class = "card-button">
+                    <button onClick = "select(2)">topic</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="../img/MulliganLabPhoto1.png" alt="topic 1">
+            </div>
+            <div class="card-content" style="background-color:#888888">
+                <h4>topic topic topic topic 2</h4>
+                <p>topic topic topic topic topic topic</p>
+                <div class = "card-button">
+                    <button onClick = "select(2)">topic</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="../img/MulliganLabPhoto1.png" alt="topic 1">
+            </div>
+            <div class="card-content" style="background-color:#888888">
+                <h4>topic topic topic topic 3</h4>
+                <p>topic topic topic topic topic topic</p>
+                <div class = "card-button">
+                    <button onClick = "select(2)">topic</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="../img/MulliganLabPhoto1.png" alt="topic 1">
+            </div>
+            <div class="card-content" style="background-color:#888888">
+                <h4>topic topic topic topic 4</h4>
+                <p>topic topic topic topic topic topic</p>
+                <div class = "card-button">
+                    <button onClick = "select(2)">topic</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="../img/MulliganLabPhoto1.png" alt="topic 1">
+            </div>
+            <div class="card-content" style="background-color:#888888">
+                <h4>topic topic topic topic 5</h4>
+                <p>topic topic topic topic topic topic</p>
+                <div class = "card-button">
+                    <button onClick = "select(2)">topic</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+<div style="background-color:#aaaaaa; height:3px"></div>
 
-<p>Our multidisciplinary research team aims to merge both basic and clinical research to improve care and outcomes for patients with pulmonary diseases. We are focused on understanding mechanisms and developing new prevention or treatment strategies in pulmonary diseases by combining basic science with translational research.</p>
+<div class = "mission-card">
+    <div class = "mission-image"></div>
+    <div class = "mission-text">
+        <h1>Our Mission</h1>
+        <p>Our multidisciplinary research team aims to merge both basic and clinical research to improve care and outcomes for patients with pulmonary diseases. We are focused on understanding mechanisms and developing new prevention or treatment strategies in pulmonary diseases by combining basic science with translational research.</p>
 
-<p>New directions for our research include identification of biomarkers for NSCLC, understanding the pathophysiology of bronchiolitis obliterans and developing potential treatment strategies, and understanding mechanisms that drive lung transplant tolerance and rejection.</p>
+        <p>New directions for our research include identification of biomarkers for NSCLC, understanding the pathophysiology of bronchiolitis obliterans and developing potential treatment strategies, and understanding mechanisms that drive lung transplant tolerance and rejection.</p>
+
+        <p>Over the coming weeks, this site will be updated as new information is obtained. Thank you for understanding as we work on our website.<p>
+    </div>
+</div>
+
+<div style="background-color:#aaaaaa; height:3px"></div>
 
 
-Over the coming weeks, this site will be updated as new information is obtained. Thank you for understanding as we work on our website.
+<style>
 
+    .mission-card {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .mission-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url("../img/MulliganLabPhoto1.png");
+    }
+
+    .mission-text {
+        position: absolute;
+        right: 15%;
+        width: 40%;
+        height: 700px;
+        background-color: rgba(255,255,255,0.7);
+    }
+
+    .mission-text h1 {
+        padding-left: 15px;
+    }
+
+    .mission-text p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .card {
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 225px;
+        font-family: Arial, sans-serif;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .card-content {
+        padding: 20px;
+        background-color: #333333;
+        color: white;
+        text-align: center;
+        height: 300px;
+        position: relative;
+    }
+
+    .card-content h4{
+        margin: 0 0 16px;
+        font-size: 1.2em;
+    }
+
+    .card-content p {
+        margin: 0 0 16px;
+    }
+
+    .card-button {
+        position: absolute;
+        bottom: 25px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .card-button button {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 1px;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color .2s, color .2s;
+    }
+
+    .card-button button:hover {
+        background-color: white;
+        color: #333333;
+    }
+</style>
 <!-- Code to post blog posts on the main page -->
 
 {% for post in paginator.posts %}
