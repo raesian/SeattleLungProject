@@ -4,9 +4,6 @@ title: "Publications"
 description: "Published Works"
 header-img: "img/home-bg.jpg"
 ---
-
-These are a selection of the most recent publications our team has published.
-
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('publications').innerHTML=renderWhich(0);
@@ -19,28 +16,30 @@ These are a selection of the most recent publications our team has published.
     function renderWhich(num) {
         if (num === 1) {
             return `<div>
-                <h1> Publications by Dr. Michael Mulligan </h1>
+                <h1 style="font-size: 27px"> Selection of the Most Recent Publications by Dr. Michael Mulligan </h1>
 
                 <ul>
                     <div class = "litems">
-                        <p onclick="window.location.href = '#';">Ramos KJ, Kapnadak SG, Bradford MC, Somayaji R, Morrell ED, Pilewski JM, Lease ED, <b>Mulligan MS</b>, Aitken ML, Gries CJ, Goss CH. Underweight Patients With Cystic Fibrosis Have Acceptable Survival Following Lung Transplantation: A United Network for Organ Sharing Registry Study. Chest. 2020 Apr; 57(4):898-906.</p>
-                        <p>Verdial FC, Madtes DK, Hwang B, <b>Mulligan MS</b>, Odem-Davis K, Waworuntu R, Wood DE, Farjah F. Prediction Model for Nodal Disease Among Patients With Non-Small Cell Lung Cancer. Ann Thorac Surg. 2019 Jun;107(6):1600-1606.</p>
-                        <p>Ramos KJ, Harhay MO, <b>Mulligan MS</b>. Which Shall I Choose? Lung Transplantation Listing Preference for Individuals with Interstitial Lung Disease and Chronic Obstructive Pulmonary Disease. Ann Am Thorac Soc. 2019 Feb;16(2):193-195.</p>
-                        <p>Berfield KS, Farjah F, <b>Mulligan MS</b>. Video-Assisted Thoracoscopic Lobectomy for Lung Cancer. Ann Thorac Surg. 2019 Feb;107(2):603-609.</p>
+                        <p onclick="window.location.href = '#';">Gouchoe DA, Sanchez PG, D'Cunha J, Bermudez CA, Daneshmand MA, Davis RD, Hartwig MG, Wozniak TC, Kon ZN, Griffith BP, Lynch WR, Machuca TN, Weyant MJ, Jessen ME, <b>Mulligan MS</b>, D'Ovidio F, Camp PC, Cantu E, Whitson BA; NOVEL and NOVEL Extension Trial Investigators. Ex vivo lung perfusion in donation after circulatory death: A post hoc analysis of the Normothermic Ex Vivo Lung Perfusion as an Assessment of Extended/Marginal Donors Lungs trial. J Thorac Cardiovasc Surg. 2024 Mar 19:S0022-5223(24)00212-5. doi: 10.1016/j.jtcvs.2024.03.011. Epub ahead of print. PMID: 38508486.</p>
+                        <p>VChan NR, Hwang B, <b>Mulligan MS</b>, Ratner BD, Bryers JD. Porous Precision-Templated 40 μm Pore Scaffolds Promote Healing through Synergy in Macrophage Receptor with Collagenous Structure and Toll-Like Receptor Signaling. Tissue Eng Part A. 2024 Apr;30(7-8):287-298. doi: 10.1089/ten.TEA.2023.0144. Epub 2024 Feb 2. PMID: 38205652; PMCID: PMC11040183.</p>
+                        <p>Marczin N, de Waal EEC, Hopkins PMA, <b>Mulligan MS</b>, Simon A, Shaw AD, Van Raemdonck D, Neyrinck A, Gries CJ, Algotsson L, Szegedi L, von Dossow V; Task force Chairs and Writing Group (exclusive of the consensus developing and coordinating group members):; Consensus members (exclusive of the consensus developing and coordinating group or co-chairs and writing group members):; Independent Reviewers:. International consensus recommendations for anesthetic and intensive care management of lung transplantation. An EACTAIC, SCA, ISHLT, ESOT, ESTS, and AST approved document. J Heart Lung Transplant. 2021 Nov;40(11):1327-1348. doi: 10.1016/j.healun.2021.07.012. Epub 2021 Jul 27. PMID: 34732281.</p>
+                        <p>Steinberg ZL, Lombardi WL, Lee J, <b>Mulligan MS</b>, Leary PJ. Balloon Pulmonary Angioplasty in Chronic Totally Occluded Pulmonary Arteries: Applying Lessons Learned From the Treatment of Coronary Artery Chronic Total Occlusions. J Invasive Cardiol. 2021 Aug;33(8):E632-E639. PMID: 34338653.</p>
+                        <p>Ramos KJ, Harhay MO, <b>Mulligan MS</b>. Which Shall I Choose? Lung Transplantation Listing Preference for Individuals with Interstitial Lung Disease and Chronic Obstructive Pulmonary Disease. Ann Am Thorac Soc. 2019 Feb;16(2):193-195. doi: 10.1513/AnnalsATS.201809-633ED. PMID: 30707065; PMCID: PMC6376947.</p>
                     </div>
                 </ul>
             </div>`
         }
         if (num === 2) {
             return `<div>
-                <h1> Publications by Billanna Hwang </h1>
+                <h1 style="font-size: 27px">Selection of the Most Recent Publications by Billanna Hwang </h1>
 
                 <ul>
                     <div class = "litems">
-                        <p>Verdial FC, Madtes DK, <b>Hwang B</b>, Mulligan MS, Odem-Davis K, Waworuntu R, Wood DE, Farjah F. Prediction Model for Nodal Disease Among Patients With Non-Small Cell Lung Cancer. Ann Thorac Surg. 2019 Jun;107(6):1600-1606.</p>
-                        <p>Thornblade LW, Mulligan MS, Odem-Davis K, <b>Hwang B</b>, Waworuntu RL, Wolff EM, Kessler L, Wood DE, Farjah F. Challenges in Predicting Recurrence After Resection of Node-Negative Non-Small Cell Lung Cancer. Ann Thorac Surg. 2018 Nov;106(5):1460-1467.</p>
-                        <p><b>Hwang B</b>, Liles WC, Waworuntu R, Mulligan MS. Pretreatment with bone marrow-derived mesenchymal stromal cell-conditioned media confers pulmonary ischemic tolerance. J Thorac Cardiovasc Surg. 2016 Mar; 151(3):841-6.</p>
-                        <p>Merry HE, Phelan P, <b>Hwang B</b>, Mulligan MS. Validating the use of short interfering RNA as a novel technique for cell-specific target gene knockdown in lung ischemia-reperfusion injury. J Thorac Cardiovasc Surg. 2016 Feb; 151(2):499-506.</p>
+                        <p>Chan NR, <b>Hwang B</b>, Mulligan MS, Ratner BD, Bryers JD. Porous Precision-Templated 40 μm Pore Scaffolds Promote Healing through Synergy in Macrophage Receptor with Collagenous Structure and Toll-Like Receptor Signaling. Tissue Eng Part A. 2024 Apr;30(7-8):287-298. doi: 10.1089/ten.TEA.2023.0144. Epub 2024 Feb 2. PMID: 38205652; PMCID: PMC11040183.</p>
+                        <p><b>Hwang B</b>, Bryers J, Mulligan MS. Potential role of exosome-based allorecognition pathways involved in lung transplant rejection. J Thorac Cardiovasc Surg. 2021 Feb;161(2):e129-e134. doi: 10.1016/j.jtcvs.2020.04.183. Epub 2020 Jun 18. PMID: 33258452; PMCID: PMC7909740.</p>
+                        <p>Hady TF, <b>Hwang B</b>, Pusic AD, Waworuntu RL, Mulligan M, Ratner B, Bryers JD. Uniform 40-µm-pore diameter precision templated scaffolds promote a pro-healing host response by extracellular vesicle immune communication. J Tissue Eng Regen Med. 2021 Jan;15(1):24-36. doi: 10.1002/term.3160. Epub 2020 Dec 1. PMID: 33217150; PMCID: PMC7954460.</p>
+                        <p>Verdial FC, Madtes DK, <b>Hwang B</b>, Mulligan MS, Odem-Davis K, Waworuntu R, Wood DE, Farjah F. Prediction Model for Nodal Disease Among Patients With Non-Small Cell Lung Cancer. Ann Thorac Surg. 2019 Jun;107(6):1600-1606. doi: 10.1016/j.athoracsur.2018.12.041. Epub 2019 Jan 30. PMID: 30710518; PMCID: PMC6535349.</p>
+                        <p>Thornblade LW, Mulligan MS, Odem-Davis K, <b>Hwang B</b>, Waworuntu RL, Wolff EM, Kessler L, Wood DE, Farjah F. Challenges in Predicting Recurrence After Resection of Node-Negative Non-Small Cell Lung Cancer. Ann Thorac Surg. 2018 Nov;106(5):1460-1467. doi: 10.1016/j.athoracsur.2018.06.022. Epub 2018 Jul 19. PMID: 30031845; PMCID: PMC6347463.</p>
                     </div>
                 </ul>
             </div>`

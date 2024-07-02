@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "Westco Exosortium"
-description: "West Coast Exosome Consortium"
+title: "Lab Members"
+description: ""
 header-img: "img/home-bg.jpg"
 ---
 
 # Members
 
 <div class = "container">
-    <div class = "card" style="padding-top:0px">
+    <div class = "card">
         <div class = "profile">
             <img src="{{ site.baseurl }}/img/JohnathonAndersonProfile.jpg"/>
         </div>
@@ -66,8 +66,8 @@ header-img: "img/home-bg.jpg"
 
 <style>
     :root {
-        --card-height: 475px;
-        --card-width: 425px;
+        --card-height: 300px;
+        --card-width: 250px;
     }
     .container {
     }
