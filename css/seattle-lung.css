@@ -331,14 +331,14 @@ footer .copyright {
   cursor: not-allowed;
 }
 ::-moz-selection {
-  color: white;
+  /*color: white;*/
   text-shadow: none;
-  background: #0085A1;
+  background: #a7caff;
 }
 ::selection {
-  color: white;
+  /*color: white;*/
   text-shadow: none;
-  background: #0085A1;
+  background: #a7caff;
 }
 img::selection {
   color: white;
