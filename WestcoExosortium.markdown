@@ -57,7 +57,7 @@ header-img: "img/home-bg.jpg"
         </div>
     </div>
     <div class = "card2">
-        <div class = "content">
+        <div class = "content" style="height:100px">
             <h2>Julie Saugstad, PhD</h2>
             <h3>Associate Professor (Oregon Health & Science University)</h3>
         </div>
@@ -66,7 +66,7 @@ header-img: "img/home-bg.jpg"
 
 <style>
     :root {
-        --card-height: 475px;
+        --card-height: 460px;
         --card-width: 425px;
     }
     .container {
@@ -107,6 +107,7 @@ header-img: "img/home-bg.jpg"
     .content {
         display: flex;
         flex-direction: column;
+        overflow: auto;
     }
     .content h2 {
         font-size: 27px;
