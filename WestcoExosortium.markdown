@@ -28,7 +28,7 @@ header-img: "img/home-bg.jpg"
         <div class = "content">
             <h2>James D. Bryers, PhD</h2>
             <h3>Professor, Department of Bioengineering (University of Washington)</h3>
-            <h3>Adjunct Professor, Department of Chemical Engineering (University of Washington)</h3>
+            <h3 style="font-size:medium">Adjunct Professor, Department of Chemical Engineering (University of Washington)</h3>
             <p>The Bryers research group is one of perhaps only two or three engineering-based research groups investigating the interaction of bacteria, immune cells, and biomedical implant materials. Thier research over the past 20 years has defined and quantified the biological and physical processes governing (1) the formation and persistence of microbial biofilms in biotechnological and medical systems, (2) control of macrophage phenotype at biomaterial interfaces, and (3) developed biomaterials that promote infection immunity.  Current research activities are (1) developing anti-biofilm biomaterials, (2) creating biomaterials that promote immunotherapy and enhance vaccine efficiency, and (3) tissue regeneration by exosome engineering. </p>
         </div>
     </div>
@@ -53,7 +53,7 @@ header-img: "img/home-bg.jpg"
         <div class = "content">
             <h2>Thomas Anchordoquy, PhD</h2>
             <h3>Professor, Department of Pharmaceutical Science (Unviersity of Colorado, Denver)</h3>
-            <p>Dr. Thomas Anchordoquy has been working on lipid-based drug delivery systems for over 30 years, and he finds it interesting that nature has evolved a similar delivery system.  In collaboration with Michael Graner, they have studied the ability of exosomes to deliver drugs in vitro and in vivo.  In addition, they have done extensive proteomic analysis of exosomes harvested under various conditions.  He would be interested in communicating with anyone who is exploiting exosomes or the exosomal pathway for drug delivery.</p>
+            <p>Dr. Thomas Anchordoquy has been working on lipid-based drug delivery systems for over 30 years, and he finds it interesting that nature has evolved a similar delivery system.  In collaboration with Michael Graner, they have studied the ability of exosomes to deliver drugs in vitro and in vivo. In addition, they have done extensive proteomic analysis of exosomes harvested under various conditions. He would be interested in communicating with anyone who is exploiting exosomes or the exosomal pathway for drug delivery.</p>
         </div>
     </div>
     <div class = "card2">

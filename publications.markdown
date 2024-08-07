@@ -64,7 +64,7 @@ header-img: "img/home-bg.jpg"
     </div>
     <div class="card">
         <div class="card-image">
-            <img src="../img/BillianaHwang.png" alt="Billanna Hwang">
+            <img src="../img/BillanaHwang.png" alt="Billanna Hwang">
         </div>
         <div class="card-content" style="background-color:#0a798f">
             <h2>Billanna Hwang</h2>
