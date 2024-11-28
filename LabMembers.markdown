@@ -23,7 +23,7 @@ header-img: "img/home-bg.jpg"
 
     function renderWhich(type) {
         de = `
-            <div class="tab">
+            <div id = "tab" class="tab">
                 <button onclick="select('Family Tree')">Family Tree</button>
                 <button onclick="select('Principal Investigators')">Principal Investigators</button>
                 <button onclick="select('Research Staff')">Research Staff</button>
@@ -140,14 +140,12 @@ header-img: "img/home-bg.jpg"
             </div>
             <div class = "card2" style="height:110px" id = "gs4">
                 <div class = "content">
-                    <h2>Isbah</h2>
-                    <h2>MS2</h2>
+                    <h2>Isbah, MS2</h2>
                 </div>
             </div>
             <div class = "card2" style="height:110px" id = "gs5>
                 <div class = "content">
-                    <h2>Rya</h2>
-                    <h2>MS2</h2>
+                    <h2>Rya, MS2</h2>
                 </div>
             </div>
             <div class = "card" id = "gs6">
@@ -162,26 +160,22 @@ header-img: "img/home-bg.jpg"
             </div>
             <div class = "card2" style="height:110px" id = "gs7">
                 <div class = "content">
-                    <h2>Mira</h2>
-                    <h2>MS2</h2>
+                    <h2>Mira, MS2</h2>
                 </div>
             </div>
             <div class = "card2" style="height:110px" id = "gs8">
                 <div class = "content">
-                    <h2>Megan G</h2>
-                    <h2>MS3</h2>
+                    <h2>Megan G, MS3</h2>
                 </div>
             </div>
             <div class = "card2" style="height:110px" id = "gs9">
                 <div class = "content">
-                    <h2>Ysa</h2>
-                    <h2>MS3</h2>
+                    <h2>Ysa, MS3</h2>
                 </div>
             </div>
             <div class = "card2" style="height:110px" id = "gs10">
                 <div class = "content">
-                    <h2>Maria</h2>
-                    <h2>MS3</h2>
+                    <h2>Maria, MS3</h2>
                 </div>
             </div>     
         `
@@ -591,7 +585,6 @@ header-img: "img/home-bg.jpg"
 
     // https://www.chestysoft.com/imagefile/javascript/get-coordinates.asp
     function GetCoordinates(e) {
-        
         var PosX = 0;
         var PosY = 0;
         var ImgPos;
@@ -613,76 +606,99 @@ header-img: "img/home-bg.jpg"
         PosY = PosY - ImgPos[1];
         //document.getElementById("x").innerHTML = PosX;
         //document.getElementById("y").innerHTML = PosY;
-        console.log("x: " + PosX / myImg.offsetWidth);
-        console.log("y: " + PosY / myImg.offsetHeight);
+        //console.log("x: " + PosX / myImg.offsetWidth);
+        //console.log("y: " + PosY / myImg.offsetHeight);
         
         //select("Interns")
         //window.location.href = "#" + "i14"
-        navigateAnchor(PosX / myImg.offsetWidth, PosY / myImg.offsetHeight);
+        //window.location.replace(window.location.href.split("#")[0])
+        determineWhich(PosX / myImg.offsetWidth, PosY / myImg.offsetHeight, e.shiftKey);
     }
 
-    function navigateAnchor(x, y) {
+    function determineWhich(x, y, shift) {
         index = "";
         page = "";
         // pi
-        x1 = 0.242;
-        x2 = 0.897;
-        y1 = 0.0;
-        y2 = 0.1549;
+        x1 = 0.312;
+        x2 = 0.79;
+        y1 = 0.0085;
+        y2 = 0.125;
         if (x > x1 && x < x2 && y > y1 && y < y2) {
-            idx = Math.ceil(((x - x1) / (x2 - x1)) * 5);
+            idx = Math.ceil(((x - x1) / (x2 - x1)) * 4);
             page = "Principal Investigators";
             index = "pi" + idx;
             console.log("index: " + index);
         }
 
         // research staff
-        x1 = 0.189
-        x2 = 0.958
-        y1 = 0.199
-        y2 = 0.33
+        x1 = 0.256 
+        x2 = 0.84
+        y1 = 0.157
+        y2 = 0.274
         if (x > x1 && x < x2 && y > y1 && y < y2) {
-            idx = Math.ceil(((x - x1) / (x2 - x1)) * 6);
+            idx = Math.ceil(((x - x1) / (x2 - x1)) * 5);
             page = "Research Staff";
             index = "rs" + idx;
             console.log("index: " + index);
         }
         
         // grad students
-        x1 = 0.18
-        x2 = 0.961
-        y1 = 0.37
-        y2 = 0.482
+        x1 = 0.15
+        x2 = 0.952
+        y1 = 0.30
+        y2 = 0.39
         if (x > x1 && x < x2 && y > y1 && y < y2) {
-            idx = Math.ceil(((x - x1) / (x2 - x1)) * 9);
+            idx = Math.ceil(((x - x1) / (x2 - x1)) * 10);
             page = "Graduate Students";
             index = "gs" + idx;
             console.log("index: " + index);
         }
 
         // interns
-        x1 = 0.18
-        x2 = 0.96
-        y1 = 0.53
-        y2 = 0.99
+        x1 = 0.176
+        x2 = 0.928
+        y1 = 0.43
+        y2 = 0.89
         if (x > x1 && x < x2 && y > y1 && y < y2) {
             xidx = Math.ceil(((x - x1) / (x2 - x1)) * 8);
-            yidx = Math.ceil(((y - y1) / (y2 - y1)) * 4);
+            yidx = Math.ceil(((y - y1) / (y2 - y1)) * 5);
             idx = (yidx - 1) * 8 + xidx;
-            if (idx != 32) {
-                page = "Interns";
-                index = "i" + idx
-            }
+            page = "Interns";
+            index = "i" + idx
             console.log("index: " + index);
         }
         if (page !== "" && index !== "") {
-            select(page);
-            window.location.href += "#" + index;
-            //blurb = document.getElementById(index);
-            //select("Family Tree");
-            //document.getElementById("preview").innerHTML = blurb.outerHTML;
+            if (shift) { // double click
+                navigateToBio(index, page);
+            } else { // single click
+                bringToPage(index, page);
+            }
         }
         //console.log(document.getElementById(index));
+    }
+
+    function navigateToBio(index, page) {
+        select(page);
+        if (!window.location.href.includes("#")) {
+            window.location.href += "#" + index;
+        } else {
+            window.location.replace(window.location.href.split("#")[0] + "#" + index)
+        }
+    }
+
+    function bringToPage(index, page) {
+        select(page);
+        blurb = document.getElementById(index);
+        select("Family Tree")
+        document.getElementById("preview").innerHTML = blurb.outerHTML;
+        //window.location.replace(window.location.href.split("#"))
+        if (window.location.href.endsWith("#tab")) {
+            window.location.replace(window.location)
+        } else if (window.location.href.includes("#")) {
+            window.location.replace(window.location.href.split("#")[0] + "#tab")
+        } else {
+            window.location.href += "#tab"
+        }
     }
 </script>
 
@@ -692,10 +708,11 @@ header-img: "img/home-bg.jpg"
 
 </div>
 
-<img id="myImgId" alt="" src="{{ site.baseurl }}/img/FamilyTree.png" width="100%" height="auto" /> <!-- 720, 780 -->
-<script type="text/javascript"> 
-var myImg = document.getElementById("myImgId"); 
-myImg.onclick = GetCoordinates; 
+<img id="ft" alt="" src="{{ site.baseurl }}/img/FamilyTree.png" width="100%" height="auto" /> <!-- 720, 780 -->
+<script>
+    var myImg = document.getElementById("ft"); 
+    myImg.onclick = function(e) { GetCoordinates(e); };
+    //myImg.ondblclick = function(e) { GetCoordinates(e, true); };
 </script>
 
 
