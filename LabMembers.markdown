@@ -454,17 +454,6 @@ header-img: "img/home-bg.jpg"
             </div>
             <div class = "card" id = "i27">
                 <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/RachaelHillProfile.png"/>
-                </div>
-                <div class = "content">
-                    <h2>Rachael Hill</h2>
-                    <h3>Junior</h3>
-                    <h3>Bioengineering</h3>
-                    <p>Rachael joined the lab as an OR Biorepository intern in June 2024 while pursuing a B.S. in Bioengineering at UW. After she graduates, she would like to work in industry (or the line between industry and research) for the pharmaceutical/ chemical aspect of Bioengineering. For fun, Rachael enjoys rollerblading on the Burke-Gilman trail and visiting the squirrels on campus. They are very friendly if you have food.</p>
-                </div>
-            </div>
-            <div class = "card" id = "i28">
-                <div class = "profile">
                     <img src="{{ site.baseurl }}/img/JohnathanCProfile.png"/>
                 </div>
                 <div class = "content">
@@ -474,7 +463,7 @@ header-img: "img/home-bg.jpg"
                     <p>Hi, I’m Jonathan Chan-Tang. I am a second-year neuroscience student at the University of Washington.</p>
                 </div>
             </div>
-            <div class = "card" id = "i29">
+            <div class = "card" id = "i28">
                 <div class = "profile">
                     <img src="{{ site.baseurl }}/img/EasonCProfile.png"/>
                 </div>
@@ -485,67 +474,67 @@ header-img: "img/home-bg.jpg"
                     <p>Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school. Eason joined the Mulligan/Hwang/Pal lab in September 2024, and is currently training as a biorepository intern. Outside of the lab, Eason is a combat medic within the Washington Army National Guard and a part-time pianist.</p>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i30">
+            <div class = "card2" style="height:140px" id = "i29">
                 <div class = "content">
                     <h2>Billy (Won Bin) Hong</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i31">
+            <div class = "card2" style="height:140px" id = "i30">
                 <div class = "content">
                     <h2>Adriana Ching</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i32">
+            <div class = "card2" style="height:140px" id = "i31">
                 <div class = "content">
                     <h2>Avery Shaffer</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i33">
+            <div class = "card2" style="height:140px" id = "i32">
                 <div class = "content">
                     <h2>Shannon Wu</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i34">
+            <div class = "card2" style="height:140px" id = "i33">
                 <div class = "content">
                     <h2>Tiff (Wai Tung) Chen</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i35">
+            <div class = "card2" style="height:140px" id = "i34">
                 <div class = "content">
                     <h2>Patrick Junwaowam</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i36">
+            <div class = "card2" style="height:140px" id = "i35">
                 <div class = "content">
                     <h2>Mia Kamiya</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i37">
+            <div class = "card2" style="height:140px" id = "i36">
                 <div class = "content">
                     <h2>Divyashree Venkatesan</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i38">
+            <div class = "card2" style="height:140px" id = "i37">
                 <div class = "content">
                     <h2>Gurnoor Sandhu</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i39">
+            <div class = "card2" style="height:140px" id = "i38">
                 <div class = "content">
                     <h2>Jake Bookwalter</h2>
                     <h3>tbd</h3>
                 </div>
             </div>
-            <div class = "card2" style="height:140px" id = "i40">
+            <div class = "card2" style="height:140px" id = "i39">
                 <div class = "content">
                     <h2>Daniel Welicki</h2>
                     <h3>tbd</h3>
@@ -663,10 +652,13 @@ header-img: "img/home-bg.jpg"
             xidx = Math.ceil(((x - x1) / (x2 - x1)) * 8);
             yidx = Math.ceil(((y - y1) / (y2 - y1)) * 5);
             idx = (yidx - 1) * 8 + xidx;
-            page = "Interns";
-            index = "i" + idx
+            if (idx <= 39) {
+                page = "Interns";
+                index = "i" + idx;
+            }
             console.log("index: " + index);
         }
+
         if (page !== "" && index !== "") {
             if (shift) { // double click
                 navigateToBio(index, page);
