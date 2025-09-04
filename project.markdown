@@ -9,13 +9,13 @@ header-img: "img/home-bg.jpg"
 
 <div class = "card-container">
     <div class = "card" style = "background-color:#2e8054; width: 250px;">
-        <p>Characterizing the role of toll like receptors in lung ischemia reperfusion injury</p>
+        <p>Characterizing the role of <b>toll like receptors</b> in <b>lung ischemia reperfusion injury</b></p>
     </div>
     <div class = "card" style = "background-color:#0a798f; width: 250px;">
-        <p>Developing novel therapeutic approaches for prevention of lung ischemia reperfusion injury</p>
+        <p>Developing <b> novel therapeutic approaches for prevention</b> of lung ischemia reperfusion injury</p>
     </div>
     <div class = "card" style = "background-color:#2e8054; width: 250px;">
-        <p>Identifying the regulatory pathways that drive ischemic tolerance</p>
+        <p>Identifying the <b>regulatory pathways</b> that drive <b>ischemic tolerance</b></p>
     </div>
 </div>
 # Funding
@@ -61,6 +61,10 @@ header-img: "img/home-bg.jpg"
         padding-bottom: 3%;
     }
     .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
         border: none;
         border-radius: 2px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -71,4 +75,9 @@ header-img: "img/home-bg.jpg"
         padding-right: 10px;
         color:white;
     }
+
+    .card p {
+        text-align: center;
+    }
+
 </style>

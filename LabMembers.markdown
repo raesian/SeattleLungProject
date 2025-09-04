@@ -307,7 +307,7 @@ header-img: "img/home-bg.jpg"
                     <h2>Arjun Naik</h2>
                     <h3>Junior</h3>
                     <h3>Computer Science/Biochemistry</h3>
-                    <p>Arjun is a junior majoring in Computer Science and Biochemistry with a minor in Neural Computation/Engineering. In his free time he enjoys playing cricket, listening to music, and competitive programming. After graduating he plans to pursue an M.D. with the goal of becoming a neurosurgeon.</p>
+                    <p>Arjun is a junior majoring in Computer Science and Biochemistry with a minor in Neural Computation/Engineering. In his free time he enjoys playing cricket, listening to music, and writing fun programs. After graduating he plans to pursue an M.D. with the goal of pursuing research and neurosurgery.</p>
                 </div>
             </div>
             <div class = "card" id = "i13">
