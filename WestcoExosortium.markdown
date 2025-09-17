@@ -20,18 +20,7 @@ header-img: "img/home-bg.jpg"
         </div>
     </div>
 
-    <div class = "card">
-        <div class = "profile">
-            <img src="{{ site.baseurl }}/img/JamesBryersProfile.jpg"/>
-        </div>
-
-        <div class = "content">
-            <h2>James D. Bryers, PhD</h2>
-            <h3>Professor, Department of Bioengineering (University of Washington)</h3>
-            <h3 style="font-size:medium">Adjunct Professor, Department of Chemical Engineering (University of Washington)</h3>
-            <p>The Bryers research group is one of perhaps only two or three engineering-based research groups investigating the interaction of bacteria, immune cells, and biomedical implant materials. Thier research over the past 20 years has defined and quantified the biological and physical processes governing (1) the formation and persistence of microbial biofilms in biotechnological and medical systems, (2) control of macrophage phenotype at biomaterial interfaces, and (3) developed biomaterials that promote infection immunity.  Current research activities are (1) developing anti-biofilm biomaterials, (2) creating biomaterials that promote immunotherapy and enhance vaccine efficiency, and (3) tissue regeneration by exosome engineering. </p>
-        </div>
-    </div>
+    
 
     <div class = "card">
         <div class = "profile">
