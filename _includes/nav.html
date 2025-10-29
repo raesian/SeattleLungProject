@@ -20,7 +20,7 @@
                 <li>
                     <a href="{{ site.baseurl }}/">Home</a>
                 </li>
-                {% assign sorted_pages = site.pages | where_exp: "page", "page.title and page.nav_exclude != true" | sort: "nav_order" %}
+                {% assign sorted_pages = site.pages | where_exp: "p", "p.nav_exclude != true" | sort: "nav_order" %}
                 {% for page in sorted_pages %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
