@@ -22,9 +22,11 @@
                 </li>
                 {% assign sorted_pages = site.pages | where_exp: "p", "p.nav_exclude != true" | sort: "nav_order" %}
                 {% for page in sorted_pages %}
+                {% if page.title %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
