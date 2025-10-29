@@ -1,4 +1,9 @@
 # EXOIRI Website - Home Base Configuration
+# EXOIRI Website - Home Base Configuration
+---
+title: EXOIRI Website - Home Base Configuration
+nav_exclude: true
+---
 
 ## 🏠 Stable Working Version - Save Point
 
