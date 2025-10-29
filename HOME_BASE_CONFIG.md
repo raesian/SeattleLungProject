@@ -1,10 +1,9 @@
-# EXOIRI Website - Home Base Configuration
-# EXOIRI Website - Home Base Configuration
 ---
 title: EXOIRI Website - Home Base Configuration
+layout: page
 nav_exclude: true
 ---
-
+# EXOIRI Website - Home Base Configuration
 ## 🏠 Stable Working Version - Save Point
 
 This document represents the stable "home base" configuration for the EXOIRI website. All features are working perfectly and this serves as our fallback point.
