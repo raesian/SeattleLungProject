@@ -5,6 +5,8 @@ Gemfile.lock
 package-lock.json
 .jekyll-cache
 vendor/
+vendor_backup/
+SeattleLungProjectFamilyTree/
 # Large video files (exceed GitHub's 100MB limit)
 **/DayInTheLife_Hesham.mov
 **/DayInTheLife_Hesham.mp4

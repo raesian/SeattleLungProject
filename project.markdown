@@ -49,6 +49,7 @@ nav_order: 5
 
     .card p {
         text-align: center;
+        color: white;
     }
 
 </style>

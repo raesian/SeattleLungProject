@@ -22,15 +22,73 @@ nav_order: 1
         document.getElementById('members').innerHTML=renderWhich(x);
     }
 
-    function renderWhich(type) {
-        de = `
-            <div id = "tab" class="tab">
-                <button onclick="select('Family Tree')">Family Tree</button>
-                <button onclick="select('Principal Investigators')">Principal Investigators</button>
-                <button onclick="select('Research Staff')">Research Staff</button>
-                <button onclick="select('Graduate Students')">Graduate Students</button>
-                <button onclick="select('Interns')">Interns</button>
+    function openBioModal(card) {
+        const name = card.querySelector('h4').innerText;
+        const role = card.querySelector('.role') ? card.querySelector('.role').innerText : '';
+        const imgSrc = card.querySelector('img') ? card.querySelector('img').src : '';
+        // Bio is stored in a hidden div or data attribute
+        const bio = card.querySelector('.bio-data') ? card.querySelector('.bio-data').innerHTML : 'No biography available.';
+
+        const modalHtml = `
+            <div class="bio-modal-overlay active" onclick="closeBioModal(event)">
+                <div class="bio-modal">
+                    <button class="bio-modal-close" onclick="closeBioModal(event)">×</button>
+                    <div class="bio-modal-content">
+                        ${imgSrc ? `<img src="${imgSrc}" class="bio-modal-img" alt="${name}">` : ''}
+                        <h3>${name}</h3>
+                        <h4>${role}</h4>
+                        ${bio}
+                    </div>
+                </div>
             </div>
+        `;
+        
+        // Remove existing modal if any
+        const existing = document.getElementById('active-bio-modal');
+        if (existing) existing.remove();
+
+        const modalContainer = document.createElement('div');
+        modalContainer.id = 'active-bio-modal';
+        modalContainer.innerHTML = modalHtml;
+        document.body.appendChild(modalContainer);
+        
+        // Prevent body scroll
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeBioModal(event) {
+        if (event) {
+            // standard click handling
+            if (event.target.classList.contains('bio-modal-overlay') || event.target.classList.contains('bio-modal-close') || event.target.innerText === '×') {
+                const modal = document.getElementById('active-bio-modal');
+                if (modal) modal.remove();
+                document.body.style.overflow = 'auto'; // Restore scroll
+            }
+        } else {
+            // direct call
+             const modal = document.getElementById('active-bio-modal');
+             if (modal) modal.remove();
+             document.body.style.overflow = 'auto';
+        }
+    }
+
+    function renderWhich(type) {
+        const tabs = ['Family Tree', 'Principal Investigators', 'Research Staff', 'Graduate Students', 'Interns'];
+        let buttonsHtml = '';
+        
+        tabs.forEach(tab => {
+            const isActive = tab === type ? 'active' : '';
+            buttonsHtml += `<button onclick="select('${tab}')" class="${isActive}">${tab}</button>`;
+        });
+
+        de = `
+            <div class="tab-container">
+                <div class="tab">
+                    ${buttonsHtml}
+                </div>
+            </div>
+            <!-- Add a fade-in animation container for content -->
+            <div id="members-content" class="animate-fade-up">
         `
         pi = `
             <h2>Principal Investigators</h2>
@@ -526,234 +584,465 @@ nav_order: 1
                     <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research and having the privilege to experience interning at a research institute as a high schooler! It's super easy to ask questions and socialize with others because of the friendly and open culture of the lab, which is also something super cool. Outside of the lab, I love to play volleyball, learn, and hang out with friends!</p>
                 </div>
             </div>
+            
+            <!-- Additional Interns -->
+            <div class = "card" id = "i44">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Molly Woodcock</h2>
+                    <h3>Sophomore</h3>
+                    <h3>Public Health - Global Health</h3>
+                    <p>My name is Molly Woodcock and I'm a sophomore attending the University of Washington majoring in Public Health - Global Health. I joined the lab in Fall of 2025 as a CT Biorepository intern. In my free time I enjoy cooking, playing tennis, and spending time with my friends. I plan to pursue a career in medicine, specifically for dermatology or reconstructive surgery.</p>
+                </div>
+            </div>
+            <div class = "card" id = "i45">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/AidanBorlet.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Aidan Borlet</h2>
+                    <h3>Freshman</h3>
+                    <h3>Biology</h3>
+                    <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
+                </div>
+            </div>
         `
 
         ft = `
-            <div class="family-tree">
-                <h2 class="section-label">Lab Family Tree</h2>
+            <div class="family-tree-container">
+                <div class="tree-header">
+                    <h2>Lab Family Tree</h2>
+                    <p>Our collaborative network of Principal Investigators, Staff, and Students.</p>
+                </div>
                 
-                <!-- Principal Investigators -->
-                <h2 class="section-label">Principal Investigators</h2>
-                <div class="pi-row">
-                    <div class="pi-member" onclick="showMember('pi1')">
-                        <img src="{{ site.baseurl }}/img/MichaelMulliganProfile.png" alt="Dr. Michael Mulligan">
-                        <h3>Dr. Michael Mulligan, MD</h3>
-                    </div>
-                    <div class="pi-member" onclick="showMember('pi2')">
-                        <img src="{{ site.baseurl }}/img/BillannaHwangProfile.png" alt="Dr. Billanna Hwang">
-                        <h3>Dr. Billanna Hwang, MPH, DHSc</h3>
-                    </div>
-                    <div class="pi-member" onclick="showMember('pi3')">
-                        <img src="{{ site.baseurl }}/img/JayPal.png" alt="Dr. Jay Pal">
-                        <h3>Dr. Jay Pal MD, PhD</h3>
-                    </div>
-                    <div class="pi-member" onclick="showMember('pi4')">
-                        <img src="{{ site.baseurl }}/img/ArjuneDhanekula.jpg" alt="Dr. Arjune Dhanekula">
-                        <h3>Dr. Arjune Dhanekula, MD</h3>
-                    </div>
-                    <div class="pi-member" onclick="showMember('pi5')">
-                        <img src="{{ site.baseurl }}/img/AprilStempien-Otero.jpg" alt="Dr. Stempien-Otero">
-                        <h3>Dr. Stempien-Otero, MD, FACC</h3>
-                    </div>
-                    <div class="pi-member" onclick="showMember('pi6')">
-                        <img src="{{ site.baseurl }}/img/AaronCheng.jpg" alt="Dr. Cheng">
-                        <h3>Dr. Aaron Cheng MD, FACS</h3>
-                    </div>
-                    <div class="pi-member" onclick="showMember('pi7')">
-                        <img src="{{ site.baseurl }}/img/JohnDimarakis.jpg" alt="Dr. Dimarakis">
-                        <h3>Dr. John Dimarakis, MD, PhD</h3>
-                    </div>
-                </div>
-
-                <!-- Research Staff -->
-                <h2 class="section-label">Research Staff</h2>
-                <div class="rs-row">
-                    <div class="rs-member" onclick="showMember('rs1')">
-                        <img src="{{ site.baseurl }}/img/RWaworuntuProfile.png" alt="Rachel Waworuntu">
-                        <h3>Rachel Waworuntu, MPH</h3>
-                        <p>Lab Manager, Research Scientist</p>
-                    </div>
-                    <div class="rs-member" onclick="showMember('rs2')">
-                        <div class="no-photo-small">No Photo</div>
-                        <h3>Hao Le</h3>
-                        <p>Laboratory Technician</p>
-                    </div>
-                    <div class="rs-member" onclick="showMember('rs4')">
-                        <img src="{{ site.baseurl }}/img/KatieChiu.jpg" alt="Katie Chiu">
-                        <h3>Katie Chiu</h3>
-                        <p>Laboratory Technician</p>
+                <!-- LEVEL 1: Principal Investigators -->
+                <div class="tree-section">
+                    <h3 class="tree-section-title">Principal Investigators</h3>
+                    <div class="tree-level-1">
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/MichaelMulliganProfile.png" alt="Dr. Michael Mulligan">
+                            <h4>Dr. Michael Mulligan, MD</h4>
+                            <span class="role">Principal Investigator</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Dr. Michael Mulligan is a Principal Investigator in the lab.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/BillannaHwangProfile.png" alt="Dr. Billanna Hwang">
+                            <h4>Dr. Billanna Hwang, MPH, DHSc</h4>
+                            <span class="role">Principal Investigator</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Dr. Billanna Hwang is a Principal Investigator in the lab.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card" id="card-jay-pal" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/JayPal.png" alt="Dr. Jay Pal">
+                            <h4>Dr. Jay Pal MD, PhD</h4>
+                            <span class="role">Principal Investigator</span>
+                        </div>
+                        <div class="tree-card" id="card-arjune-dhanekula" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/ArjuneDhanekula.jpg" alt="Dr. Arjune Dhanekula">
+                            <h4>Dr. Arjune Dhanekula, MD</h4>
+                            <span class="role">PGY-6, Investigator in Training</span>
+                        </div>
+                        <div class="tree-card" id="card-stempien-otero" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AprilStempien-Otero.jpg" alt="Dr. Stempien-Otero">
+                            <h4>Dr. Stempien-Otero, MD, FACC</h4>
+                            <span class="role">Principal Investigator</span>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AaronCheng.jpg" alt="Dr. Aaron Cheng">
+                            <h4>Dr. Aaron Cheng MD, FACS</h4>
+                            <span class="role">Principal Investigator</span>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/JohnDimarakis.jpg" alt="Dr. John Dimarakis">
+                            <h4>Dr. John Dimarakis, MD, PhD</h4>
+                            <span class="role">Principal Investigator</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Graduate Students -->
-                <h2 class="section-label">Graduate Students</h2>
-                <div class="gs-row">
-                    <div class="gs-member" onclick="showMember('gs1')">
-                        <img src="{{ site.baseurl }}/img/JeremiahMyintProfile.png" alt="Jeremiah Myint">
-                        <h3>Jeremiah Myint</h3>
-                        <p>Research Coordinator</p>
-                    </div>
-                    <div class="gs-member" onclick="showMember('gs2')">
-                        <div class="no-photo-small">No Photo</div>
-                        <h3>Carolyn Toombs, MS2</h3>
-                        <p>MS2</p>
-                    </div>
-                    <div class="gs-member" onclick="showMember('gs4')">
-                        <img src="{{ site.baseurl }}/img/TarynTyeProfile.png" alt="Taryn Tye">
-                        <h3>Taryn Tye, MS2</h3>
-                        <p>MS2</p>
+                <!-- LEVEL 2: Research Staff & Grad Students -->
+                <div class="tree-section">
+                    <h3 class="tree-section-title">Research Staff & Graduate Students</h3>
+                    <div class="tree-level-2">
+                        <!-- Staff -->
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/RWaworuntuProfile.png" alt="Rachel Waworuntu">
+                            <h4>Rachel Waworuntu, MPH</h4>
+                            <span class="role">Lab Manager, Research Scientist</span>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <div class="no-photo-small">No Photo</div>
+                            <h4>Hao Le</h4>
+                            <span class="role">Laboratory Technician</span>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/KatieChiu.jpg" alt="Katie Chiu">
+                            <h4>Katie Chiu</h4>
+                            <span class="role">Laboratory Technician</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Katie currently works as one of the lab's Research Technicians and has been a part of the lab since Spring 2022. Katie is currently studying the effects of immunosuppressants in relation to exosomes and lung transplantation. She is also working on a project based around viral and bacterial infections post lung transplantation. When not at the lab, Katie enjoys playing the violin, volunteering, experimenting with cooking. She completed her undergraduate degree in Molecular, Cellular, Developmental Biology with Interdisciplinary Honors at UW. She hopes to continue her education in medical school in hopes of studying pediatric surgery.</p>
+                            </div>
+                        </div>
+
+                        <!-- Grads -->
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/JeremiahMyintProfile.png" alt="Jeremiah Myint">
+                            <h4>Jeremiah Myint</h4>
+                            <span class="role">Research Coordinator</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Jeremiah joined the lab in April 2022 as an Undergraduate Intern, recently graduating in June 2024 with a Bachelor of Science in Biochemistry, and a minor in Chemistry. He is starting a new chapter in the lab as its Research Coordinator. Jeremiah has gained extensive laboratory and research experience, having knowledge in techniques such as flow cytometry and nanoparticle tracking analysis (NTA). In his free time, Jeremiah is an avid musician, playing the bass and guitar professionally in the Greater Seattle Region.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <div class="no-photo-small">No Photo</div>
+                            <h4>Carolyn Toombs, MS2</h4>
+                            <span class="role">MS2</span>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/TarynTyeProfile.png" alt="Taryn Tye">
+                            <h4>Taryn Tye, MS2</h4>
+                            <span class="role">MS2</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Taryn is a second-year medical student at the University of Washington. When she's not studying, she enjoys running long distances, skiing down mountains, and hiking in solitude. While still open to different medical specialties, Taryn has a strong interest in general surgery.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Interns Grid -->
-                <h2 class="section-label">Interns</h2>
-                <div class="interns-grid">
-                    <!-- Postbaccalaureate (Graduated) -->
-                    <div class="intern-member" onclick="showMember('i1')">
-                        <img src="{{ site.baseurl }}/img/LucasBProfile.png" alt="Lucas Ivan Bjorkheim">
-                        <h3>Lucas Ivan Bjorkheim</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i3')">
-                        <img src="{{ site.baseurl }}/img/MohamedIbrahimProfile.png" alt="Mohamed Ibrahim">
-                        <h3>Mohamed Ibrahim</h3>
-                    </div>
-                    
-                    <!-- Seniors -->
-                    <div class="intern-member" onclick="showMember('i6')">
-                        <img src="{{ site.baseurl }}/img/AaronInthavongProfile.jpg" alt="Aaron Inthavong">
-                        <h3>Aaron Inthavong</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i7')">
-                        <img src="{{ site.baseurl }}/img/EmilySProfile.png" alt="Emily Sui">
-                        <h3>Emily Sui</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i9')">
-                        <img src="{{ site.baseurl }}/img/StephanieWong.png" alt="Stephanie Wong">
-                        <h3>Stephanie Wong</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i16')">
-                        <img src="{{ site.baseurl }}/img/EmmaPhamProfile.png" alt="Emma Pham">
-                        <h3>Emma Pham</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i17')">
-                        <img src="{{ site.baseurl }}/img/HanaSugiharaProfile.png" alt="Hana Sugihara">
-                        <h3>Hana Sugihara</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i20')">
-                        <img src="{{ site.baseurl }}/img/KianaKoloushani.png" alt="Kiana Koloushani">
-                        <h3>Kiana Koloushani</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i25')">
-                        <img src="{{ site.baseurl }}/img/PatrickHongProfile.png" alt="Patrick Hong">
-                        <h3>Patrick Hong</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i31')">
-                        <img src="{{ site.baseurl }}/img/AveryShafer.jpeg" alt="Avery Shaffer">
-                        <h3>Avery Shaffer</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i32')">
-                        <img src="{{ site.baseurl }}/img/Shannon Wu photo.png" alt="Shannon Wu">
-                        <h3>Shannon Wu</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i41')">
-                        <img src="{{ site.baseurl }}/img/LeahMajor.jpg" alt="Leah Major">
-                        <h3>Leah Major</h3>
-                    </div>
-                    
-                    <!-- Juniors -->
-                    <div class="intern-member" onclick="showMember('i13')">
-                        <img src="{{ site.baseurl }}/img/ArvindSunderamProfile.png" alt="Arvind Sunderam">
-                        <h3>Arvind Sunderam</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i18')">
-                        <img src="{{ site.baseurl }}/img/CatWalker.jpg" alt="Cat Walker">
-                        <h3>Cat Walker</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i19')">
-                        <img src="{{ site.baseurl }}/img/DarbyBrillonProfile.png" alt="Darby Brillon">
-                        <h3>Darby Brillon</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i21')">
-                        <img src="{{ site.baseurl }}/img/HeshamKProfile.png" alt="Hesham Katabi">
-                        <h3>Hesham Katabi</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i23')">
-                        <img src="{{ site.baseurl }}/img/IanHoProfile.png" alt="Ian Ho">
-                        <h3>Ian Ho</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i27')">
-                        <img src="{{ site.baseurl }}/img/JohnathanCProfile.png" alt="Jonathan Chan-Tang">
-                        <h3>Jonathan Chan-Tang</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i29')">
-                        <img src="{{ site.baseurl }}/img/WonBonBillySan.png" alt="Billy Hong">
-                        <h3>Billy (Won Bin) Hong</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i30')">
-                        <img src="{{ site.baseurl }}/img/AdrianaCheng.JPG" alt="Adriana Ching">
-                        <h3>Adriana Ching</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i33')">
-                        <img src="{{ site.baseurl }}/img/TiffanyChenNEW.JPG" alt="Tiff Chen">
-                        <h3>Tiff (Wai Tung) Chan</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i34')">
-                        <img src="{{ site.baseurl }}/img/PatJunwaowam.jpg" alt="Pat Junwaowam">
-                        <h3>Pat Junwaowam</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i35')">
-                        <img src="{{ site.baseurl }}/img/MiaKamiya.jpg" alt="Mia Kamiya">
-                        <h3>Mia Kamiya</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i36')">
-                        <div class="no-photo-small">Divyashree Venkatesan</div>
-                        <h3>Divyashree Venkatesan</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i37')">
-                        <img src="{{ site.baseurl }}/img/GurnoorSandhu.jpg" alt="Gurnoor Sandhu">
-                        <h3>Gurnoor Sandhu</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i42')">
-                        <img src="{{ site.baseurl }}/img/BenSudlow.png" alt="Ben Sudlow">
-                        <h3>Ben Sudlow</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i43')">
-                        <img src="{{ site.baseurl }}/img/OliviaQiao.JPG" alt="Olivia Qiao">
-                        <h3>Olivia Qiao</h3>
-                    </div>
-                    
-                    <!-- Sophomores -->
-                    <div class="intern-member" onclick="showMember('i14')">
-                        <img src="{{ site.baseurl }}/img/DerekNguyen.png" alt="Derek Nguyen">
-                        <h3>Derek Nguyen</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i28')">
-                        <img src="{{ site.baseurl }}/img/EasonCProfile.png" alt="Eason Chen">
-                        <h3>Eason Chen</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i38')">
-                        <img src="{{ site.baseurl }}/img/AdityaVarmaChekuri.JPG" alt="Aditya Varma">
-                        <h3>Aditya Varma</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i39')">
-                        <img src="{{ site.baseurl }}/img/AlexanderRowland.JPEG" alt="Alexander Rowland">
-                        <h3>Alexander Rowland</h3>
-                    </div>
-                    <div class="intern-member" onclick="showMember('i40')">
-                        <img src="{{ site.baseurl }}/img/JanakiVenkatesh.JPG" alt="Janaki Venkatesh">
-                        <h3>Janaki Venkatesh</h3>
-                    </div>
-                    
-                    <!-- High School -->
-                    <div class="intern-member" onclick="showMember('i15')">
-                        <img src="{{ site.baseurl }}/img/EliKim.JPG" alt="Eli Kim">
-                        <h3>Eli Kim</h3>
+                <!-- LEVEL 3: Interns -->
+                <div class="tree-section">
+                    <h3 class="tree-section-title">Interns</h3>
+                    <div class="tree-grid">
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/LucasBProfile.png" alt="Lucas Ivan Bjorkheim">
+                            <h4>Lucas Ivan Bjorkheim</h4>
+                            <span class="role">Postbaccalaureate Intern</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Hi everyone! My name is Lucas and I'm continuously thankful to a part of the work here at the UW Department of Surgery CT Division Mulligan Hwang Lab. Prior to joining the UW Department of Surgery Mulligan Lab I was a part of medical research with Sharon S. Laing, PhD of the UW School of Public Health, and was a scientific investigator on a joint study with Seattle Cancer Care Alliance. My aspirations are to both practice surgery as a transplant surgeon and to actively conduct medical research. I feel very glad that pursuing this path is possible and I'm glad to be doing so under the mentorship of Dr. Hwang, Rachel and Dr. Mulligan.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/MohamedIbrahimProfile.png" alt="Mohamed Ibrahim">
+                            <h4>Mohamed Ibrahim</h4>
+                            <span class="role">Postbaccalaureate Intern</span>
+                        </div>
+                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AaronInthavongProfile.jpg" alt="Aaron Inthavong">
+                            <h4>Aaron Inthavong</h4>
+                            <span class="role">Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Aaron is a junior majoring in Bioengineering. He joined the lab in October of 2023 as an intern, assisting with lung and cardiac biorepository items. Outside of the lab he enjoys playing golf, cooking, and crime shows. He aims to further his education in graduate school to learn the tools needed to tackle future medical needs.</p>
+                            </div>
+                        </div>
+                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/EmilySProfile.png" alt="Emily Sui">
+                            <h4>Emily Sui</h4>
+                            <span class="role">Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Emily is a Junior majoring in Molecular, Cellular, and Developmental Biology and double minoring in Global Health and French. She's been part of the lab since September of 2023 and first started off as a biorepository intern.</p>
+                            </div>
+                        </div>
+                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/StephanieWong.png" alt="Stephanie Wong">
+                            <h4>Stephanie Wong</h4>
+                            <span class="role">Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Stephanie is currently a fourth-year undergraduate student studying Medical Laboratory Sciences with a minor in Microbiology. She joined the lab in September 2023 as a biorepository intern.</p>
+                            </div>
+                        </div>
+                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/EmmaPhamProfile.png" alt="Emma Pham">
+                            <h4>Emma Pham</h4>
+                            <span class="role">Senior</span>
+                             <div class="bio-data" style="display:none;">
+                                <p>In my freetime, I like to read, draw and play the piano. I want to be a pathologist.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/HanaSugiharaProfile.png" alt="Hana Sugihara">
+                            <h4>Hana Sugihara</h4>
+                            <span class="role">Senior</span>
+                             <div class="bio-data" style="display:none;">
+                                <p>Hana is a junior majoring in Biochemistry and Public Health-Global Health with Departmental Honors. After undergrad, she hopes to pursue further education in medical school.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/KianaKoloushani.png" alt="Kiana Koloushani">
+                            <h4>Kiana Koloushani</h4>
+                            <span class="role">Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Kiana (she/her) is an undergraduate student at the University of Washington, majoring in biology-physiology and minoring in chemistry. She joined this lab in the Spring of 2024 as an OR intern.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/PatrickHongProfile.png" alt="Patrick Hong">
+                            <h4>Patrick Hong</h4>
+                            <span class="role">Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Patrick is a junior at the University of Washington studying Public Health for the pre-med route.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AveryShafer.jpeg" alt="Avery Shaffer">
+                            <h4>Avery Shaffer</h4>
+                            <span class="role">Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Avery is a fourth-year undergraduate student studying microbiology and joined the lab as a biorepository intern in October 2024.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/Shannon Wu photo.png" alt="Shannon Wu">
+                            <h4>Shannon Wu</h4>
+                            <span class="role">Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Shannon is a senior majoring in MCD Biology. She joined the lab as an OR intern in fall 2024.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/LeahMajor.jpg" alt="Leah Major">
+                            <h4>Leah Major</h4>
+                            <span class="role">Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Leah is a third year student from Olympia Washington pursuing a degree in MCD biology and microbiology.</p>
+                            </div>
+                        </div>
+                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/ArvindSunderamProfile.png" alt="Arvind Sunderam">
+                            <h4>Arvind Sunderam</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>My name is Arvind Sunderam, and I am a sophomore at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet.</p>
+                            </div>
+                        </div>
+                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/CatWalker.jpg" alt="Cat Walker">
+                            <h4>Cat Walker</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Cat Walker currently attends the University of Washington and is majoring in biochemistry. She hopes to go to medical school, and in her free time she cross-stitches and hikes.</p>
+                            </div>
+                        </div>
+                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/DarbyBrillonProfile.png" alt="Darby Brillon">
+                            <h4>Darby Brillon</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Darby Brillon is an undergraduate studying mathematics at the University of Washington. In his free time Darby loves to camp, hike, ski, and volunteer with King County Search and Rescue.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/HeshamKProfile.png" alt="Hesham Katabi">
+                            <h4>Hesham Katabi</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Hesham is passionate about medicine and intends to pursue medical school after obtaining his Bachelor's degree in bioengineering. In his free time, he likes to discover new food spots, play soccer, workout, and play pickleball.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/IanHoProfile.png" alt="Ian Ho">
+                            <h4>Ian Ho</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Ian is a second year international student from Taiwan. Loving Chemistry and Biology lead him to biochemistry and an internship in this lab.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/JohnathanCProfile.png" alt="Jonathan Chan-Tang">
+                            <h4>Jonathan Chan-Tang</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Jonathan is a 3rd year undergraduate student studying neuroscience at the University of Washington. He is planning to go to medical school after graduating. Outside of the lab, he likes running, hiking, and volunteering with his friends.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/WonBonBillySan.png" alt="Billy Hong">
+                            <h4>Billy (Won Bin) Hong</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Won Bin (Billy) Hong is going into his junior year of college at the University of Washington Seattle and he is a general biology major. Some of Billy's hobbies include enjoying good food, thrifting, exploring the fine line between investment strategy and poker night, and practicing probability in real-world settings.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AdrianaCheng.JPG" alt="Adriana Ching">
+                            <h4>Adriana Ching</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Adriana is a junior studying biology at the University of Washington. Outside of the lab, she loves baking, reading, and hiking with her dogs.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/TiffanyChenNEW.JPG" alt="Tiff (Wai Tung) Chan">
+                            <h4>Tiff (Wai Tung) Chan</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Tiff is a rising junior studying MCD Biology. She joined the lab in September 2024 as a research intern. She assists with blood and tissue processing alongside with general lab items and helps the lab manager and technician for experiments.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/PatJunwaowam.jpg" alt="Pat Junwaowam">
+                            <h4>Pat Junwaowam</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Pat is going into his junior year studying Bioengineering. He is planning to attend medical school after finishing his undergrad at University of Washington.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/MiaKamiya.jpg" alt="Mia Kamiya">
+                            <h4>Mia Kamiya</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Mia Kamiya is a junior at the University of Washington majoring in biochemistry. She joined the lab as an OR intern in October 2024, where she primarily collects blood and tissue samples and helps process them for future research projects.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <div class="no-photo-small">Divyashree Venkatesan</div>
+                            <h4>Divyashree Venkatesan</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Hello! My name is Divy, and I'm currently a junior majoring in Biochemistry on the pre-med track. Outside of academics, I enjoy doing art, binge-watching shows, and exploring new hobbies whenever I can.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/GurnoorSandhu.jpg" alt="Gurnoor Sandhu">
+                            <h4>Gurnoor Sandhu</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Gurnoor is a junior majoring in Biology at the University of Washington. She joined the lab in October 2024 as an OR and Biorepository intern.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/BenSudlow.png" alt="Ben Sudlow">
+                            <h4>Ben Sudlow</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Ben is a junior at the University of Washington majoring in Biology: Physiology and joined the lab as an OR intern in September 2024. Outside of studying, working in the lab, or watching Instagram reels, he enjoys playing musical instruments.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/OliviaQiao.JPG" alt="Olivia Qiao">
+                            <h4>Olivia Qiao</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Olivia is a Junior at the University of Washington studying Biology. She joined Mulligan, Pal, Hwang Labs in the Spring of 2025 as a research intern.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/DerekNguyen.png" alt="Derek Nguyen">
+                            <h4>Derek Nguyen</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Derek is a sophomore majoring in Electrical and Computer Engineering. He joined the lab in June 2023 as an intern, assisting with lung and cardiac biorepository items and research.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/EasonCProfile.png" alt="Eason Chen">
+                            <h4>Eason Chen</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AdityaVarmaChekuri.JPG" alt="Aditya Varma">
+                            <h4>Aditya Varma</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Aditya is currently a sophomore at the University of Washington. He joined the lab as an OR intern in the spring of 2025.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AlexanderRowland.JPEG" alt="Alexander Rowland">
+                            <h4>Alexander Rowland</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Alexander Rowland is a sophomore at the University of Washington majoring in microbiology. He joined the lab as an OR intern in the spring of 2025.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/JanakiVenkatesh.JPG" alt="Janaki Venkatesh">
+                            <h4>Janaki Venkatesh</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/EliKim.JPG" alt="Eli Kim">
+                            <h4>Eli Kim</h4>
+                            <span class="role">High School Senior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg" alt="Molly Woodcock">
+                            <h4>Molly Woodcock</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>My name is Molly Woodcock and I'm a sophomore attending the University of Washington majoring in Public Health - Global Health. I joined the lab in Fall of 2025 as a CT Biorepository intern. In my free time I enjoy cooking, playing tennis, and spending time with my friends. I plan to pursue a career in medicine, specifically for dermatology or reconstructive surgery.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AidanBorlet.jpg" alt="Aidan Borlet">
+                            <h4>Aidan Borlet</h4>
+                            <span class="role">Freshman</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/Ved.jpg" alt="Vedant Kulkarni">
+                            <h4>Vedant Kulkarni</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Vedant is a junior at UW majoring in Molecular, Cellular, and Developmental Biology and minoring in Nutrition. He hopes to go to medical school after his undergraduate study to become a cardiologist. Outside of the lab, Vedant loves volunteering in medicine, working out with friends, going on day-trips, and being an avid member in the Husky Marching Band (Go Dawgs!).</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/Jacob.jpg" alt="Jacob Rainey">
+                            <h4>Jacob Rainey</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Jacob is a sophomore studying Biology at the University of Washington and joined the lab in Fall 2025. Outside of Lab he enjoys running, reading and hanging out with friends.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/JungLee.jpg" alt="Jung Lee">
+                            <h4>Jung Lee</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Jung Lee is a sophomore at the University of Washington majoring in biochemistry. In her free time, she enjoys trying new food places and connecting with people. She is pursuing a career in medicine and is interested in learning how health, science, and patient care intersect.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/LenaCzech.jpg" alt="Lena Czech">
+                            <h4>Lena Czech</h4>
+                            <span class="role">Undergraduate</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Lena is an undergraduate student at the University of Washington, double majoring in Biochemistry and Public Health–Global Health. She joined the lab in October 2025. Lena enjoys the outdoors, reading, and traveling. She plans to pursue an MD after completing her undergraduate degree!</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/SruthiAlamuru.jpg" alt="Sruthi Alamuru">
+                            <h4>Sruthi Alamuru</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn '25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW's South Asian a cappella team UW Awaaz!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         `
 
         switch(type) {
+            case 'Family Tree': return ft;
             case 'Principal Investigators': return de + pi;
             case 'Research Staff': return de + rs;
             //case 'Clinical Researcher': return de + cr;
@@ -1120,6 +1409,16 @@ nav_order: 1
             name: 'Olivia Qiao',
             title: 'Junior - Biology',
             bio: 'Olivia is a Junior at the University of Washington studying Biology. She joined Mulligan, Pal, Hwang Labs in the Spring of 2025 as a research intern. Outside of the lab, she enjoys painting, traveling, going to the beach, and learning new recipes to cook. Her long-term goal is to pursue a career in healthcare after graduating from the University of Washington.'
+        },
+        'i44': {
+            name: 'Molly Woodcock',
+            title: 'Sophomore - Public Health - Global Health',
+            bio: 'My name is Molly Woodcock and I\'m a sophomore attending the University of Washington majoring in Public Health - Global Health. I joined the lab in Fall of 2025 as a CT Biorepository intern. In my free time I enjoy cooking, playing tennis, and spending time with my friends. I plan to pursue a career in medicine, specifically for dermatology or reconstructive surgery.'
+        },
+        'i45': {
+            name: 'Aidan Borlet',
+            title: 'Freshman - Biology',
+            bio: 'Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.'
         }
     };
 

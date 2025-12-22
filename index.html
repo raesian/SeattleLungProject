@@ -1,19 +1,51 @@
 ---
-layout: page
-description: 
+layout: default
+description:
 ---
 
-<!--<center><img src="{{ site.baseurl }}/img/Seattle_Lung_Project_small.png" width="300px"/></center>-->
-
-<div class="circular-research-container">
-    <!-- Central Lab Logo -->
-    <div class="center-logo">
-        <img src="{{ site.baseurl }}/img/EXOIRI_Logo-removebg-preview.png" alt="Exo-Immuno Research Institute Logo">
+<!-- Hero Section with Logo -->
+<!-- Hero Section with Video -->
+<div class="intro-header">
+    <div class="container hero-split-container">
+        <div class="row hero-flex-row">
+            <div class="col-md-6 col-sm-12">
+                <div class="hero-video-wrapper">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/1215.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="hero-content-wrapper">
+                    <img src="{{ site.baseurl }}/img/EXOIRI_Logo-removebg-preview.png" alt="EXOIRI Logo"
+                        class="hero-main-logo">
+                    <h1 class="hero-title">Our Mission</h1>
+                    <div class="hero-mission-text">
+                        <p>Our multidisciplinary research team aims to merge both basic and clinical research to improve
+                            care and
+                            outcomes for patients with pulmonary diseases.</p>
+                        <p>We are focused on understanding mechanisms and developing new prevention or treatment
+                            strategies in
+                            pulmonary diseases by combining basic science with translational research.</p>
+                    </div>
+                    <hr class="small" style="margin-left: 0; border-color: var(--color-accent-blue);">
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <!-- Research Cards positioned in grid on the right -->
-    <div class="research-cards-container">
-        <div class="research-card" data-position="1">
+</div>
+
+<div class="container research-section">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Our Research Areas</h2>
+            <hr class="small">
+        </div>
+    </div>
+
+    <div class="research-grid stagger-children reveal-on-scroll">
+        <div class="research-card">
             <div class="research-image">
                 <img src="{{ site.baseurl }}/img/HOOD.png" alt="Lung Exo-Immunology">
             </div>
@@ -21,8 +53,8 @@ description:
                 <h3>Lung Exo-Immunology</h3>
             </div>
         </div>
-        
-        <div class="research-card" data-position="2">
+
+        <div class="research-card">
             <div class="research-image">
                 <img src="{{ site.baseurl }}/img/BloodProcessing.png" alt="Cardiac Exo-Immunology">
             </div>
@@ -30,8 +62,8 @@ description:
                 <h3>Cardiac Exo-Immunology</h3>
             </div>
         </div>
-        
-        <div class="research-card" data-position="3">
+
+        <div class="research-card">
             <div class="research-image">
                 <img src="{{ site.baseurl }}/img/Image stream.png" alt="Immuno-Engineering">
             </div>
@@ -39,8 +71,8 @@ description:
                 <h3>Immuno-Engineering</h3>
             </div>
         </div>
-        
-        <div class="research-card" data-position="4">
+
+        <div class="research-card">
             <div class="research-image">
                 <img src="{{ site.baseurl }}/img/Gel.png" alt="Clinical Research">
             </div>
@@ -48,8 +80,8 @@ description:
                 <h3>Clinical Research</h3>
             </div>
         </div>
-        
-        <div class="research-card" data-position="5">
+
+        <div class="research-card">
             <div class="research-image">
                 <img src="{{ site.baseurl }}/img/Slides.png" alt="CT Translational CORE">
             </div>
@@ -58,277 +90,45 @@ description:
             </div>
         </div>
     </div>
-    </div>
-
-    <div class = "mission-card">
-    <div class = "mission-image"></div>
-    <div class = "mission-text">
-        <h1>Our Mission</h1>
-        <p>Our multidisciplinary research team aims to merge both basic and clinical research to improve care and outcomes for patients with pulmonary diseases. We are focused on understanding mechanisms and developing new prevention or treatment strategies in pulmonary diseases by combining basic science with translational research.</p>
-
-        <p>New directions for our research include identification of biomarkers for NSCLC, understanding the pathophysiology of bronchiolitis obliterans and developing potential treatment strategies, and understanding mechanisms that drive lung transplant tolerance and rejection.</p>
-
-        <p>Over the coming weeks, this site will be updated as new information is obtained. Thank you for understanding as we work on our website.<p>
-    </div>
 </div>
 
-<div style="background-color:#aaaaaa; height:3px"></div>
+<!-- Mission Section Moved to Hero -->
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- Blog Posts Loop -->
+            {% for post in paginator.posts %}
+            <div class="post-preview">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <h2 class="post-title">{{ post.title }}</h2>
+                    {% if post.subtitle %}
+                    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+                    {% endif %}
+                </a>
+                <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif
+                    %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+            </div>
+            <hr>
+            {% endfor %}
 
-<style>
-
-    .mission-card {
-        width: 100%;
-        height:fit-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-left: 0px;
-        padding-right: 0px;
-        overflow: hidden;
-        margin-top: 100px;
-    }
-
-    .mission-image {
-        width: 100%;
-        min-height: 730px;
-        height:auto;
-        background-size: cover;
-        background-image: url("../img/MulliganLabPhoto1.png");
-    }
-
-    .mission-text {
-        position: absolute;
-        right: 15%;
-        width: 40%;
-        height: 730px;
-        background-color: rgba(255,255,255,0.7);
-        overflow:auto;
-        word-wrap: break-word;
-        overflow-y: auto;
-    }
-
-    .mission-text h1 {
-        padding-left: 15px;
-    }
-
-    .mission-text p {
-        padding-left: 15px;
-        padding-right: 15px;
-        max-width: 650px;
-    }
-
-    .circular-research-container {
-        position: relative;
-        width: 100%;
-        height: 600px;
-        margin: 20px auto;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 0 20px 0 20px;
-        gap: 80px;
-    }
-    
-    .center-logo {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: transparent;
-        border-radius: 50%;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        flex-shrink: 0;
-        margin-top: 180px;
-    }
-    
-    .center-logo img {
-        max-width: 250px;
-        max-height: 250px;
-        object-fit: contain;
-    }
-
-    .research-cards-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
-        width: 900px;
-        height: 100%;
-        align-items: start;
-        padding-top: 0px;
-    }
-    
-    .research-card:nth-child(4) {
-        grid-column: 1;
-        grid-row: 2;
-        justify-self: center;
-        margin-left: 50%;
-    }
-    
-    .research-card:nth-child(5) {
-        grid-column: 3;
-        grid-row: 2;
-        justify-self: center;
-        margin-right: 50%;
-    }
-    
-    .research-card {
-        background: transparent;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        width: 280px;
-        height: 320px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        position: relative;
-    }
-    
-    .research-card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        z-index: 5;
-    }
-
-    .research-image {
-        width: 100%;
-        height: 240px;
-        overflow: hidden;
-        position: relative;
-        background: #f8f9fa;
-    }
-    
-    .research-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        mix-blend-mode: multiply;
-        transition: transform 0.3s ease;
-    }
-
-    .research-card:hover .research-image img {
-        transform: scale(1.05);
-    }
-
-    .research-content {
-        padding: 25px 20px;
-        text-align: center;
-        background: #1a1a1a;
-        color: white;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid #4caf50;
-    }
-
-    .research-content h3 {
-        margin: 0;
-        font-size: 1.3em;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    @media (max-width: 768px) {
-        .circular-research-container {
-            flex-direction: column;
-            height: auto;
-            padding: 20px;
-            gap: 40px;
-        }
-        
-        .center-logo {
-            width: 200px;
-            height: 200px;
-            margin-bottom: 0;
-        }
-        
-        .center-logo img {
-            max-width: 160px;
-            max-height: 160px;
-        }
-        
-        .research-cards-container {
-            width: 100%;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 15px;
-        }
-        
-        .research-card:nth-child(4),
-        .research-card:nth-child(5) {
-            grid-column: span 1;
-        }
-        
-        .research-card:nth-child(4) {
-            grid-column: 1;
-        }
-        
-        .research-card:nth-child(5) {
-            grid-column: 2;
-        }
-        
-        .research-card {
-            width: 100%;
-            height: 250px;
-        }
-        
-        .research-image {
-            height: 170px;
-            background: #f8f9fa;
-        }
-        
-        .research-image img {
-            mix-blend-mode: multiply;
-        }
-        
-        .research-content {
-            height: 80px;
-            padding: 20px 15px;
-        }
-        
-        .research-content h3 {
-            font-size: 1.1em;
-        }
-    }
-</style>
-<!-- Code to post blog posts on the main page -->
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+            <!-- Pager -->
+            {% if paginator.total_pages > 1 %}
+            <ul class="pager">
+                {% if paginator.previous_page %}
+                <li class="previous">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+                        Newer Posts</a>
+                </li>
+                {% endif %}
+                {% if paginator.next_page %}
+                <li class="next">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts
+                        &rarr;</a>
+                </li>
+                {% endif %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
 </div>
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
-
-<!-- End - Code to post blog posts on the main page -->
