@@ -234,10 +234,10 @@ h6 {
   max-width: 400px !important;
   /* Fixed width to make it smaller */
   margin: 0 auto;
-  height: 225px !important;
-  /* Fixed height */
-  min-height: 225px !important;
-  max-height: 225px !important;
+  height: 150px !important;
+  /* Fixed height - matches HTML inline style */
+  min-height: 150px !important;
+  max-height: 150px !important;
   flex-shrink: 0 !important;
   /* Prevent flex from shrinking the video */
   align-self: flex-start !important;
@@ -261,15 +261,15 @@ h6 {
 }
 
 .hero-video-wrapper video {
-  width: 400px !important;
-  /* Explicit width to override intrinsic dimensions */
-  height: 225px !important;
-  /* Explicit height to override intrinsic dimensions */
+  width: 100% !important;
+  /* Use 100% to fill container */
+  height: 100% !important;
+  /* Use 100% to fill container */
   max-width: 400px !important;
-  max-height: 225px !important;
-  min-width: 400px !important;
-  min-height: 225px !important;
-  /* Force video to respect container height */
+  max-height: 150px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  /* Remove min constraints that might conflict */
   display: block !important;
   object-fit: cover !important;
   object-position: center center !important;
