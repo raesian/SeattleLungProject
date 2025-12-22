@@ -219,6 +219,14 @@ h6 {
   /* Safety for mobile */
 }
 
+/* Override Bootstrap column to allow video to shrink */
+.hero-flex-row .col-md-6:first-child {
+  max-width: 400px !important;
+  width: auto !important;
+  flex: 0 0 auto !important;
+  /* Force column to shrink to fit content */
+}
+
 /* Video Wrapper (Left) - Matches Content Height */
 .hero-video-wrapper {
   position: relative !important;
@@ -253,10 +261,14 @@ h6 {
 }
 
 .hero-video-wrapper video {
-  width: 100% !important;
-  height: 100% !important;
+  width: 400px !important;
+  /* Explicit width to override intrinsic dimensions */
+  height: 225px !important;
+  /* Explicit height to override intrinsic dimensions */
   max-width: 400px !important;
   max-height: 225px !important;
+  min-width: 400px !important;
+  min-height: 225px !important;
   /* Force video to respect container height */
   display: block !important;
   object-fit: cover !important;
