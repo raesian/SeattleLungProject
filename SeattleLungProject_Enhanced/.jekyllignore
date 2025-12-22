@@ -1,9 +1,0 @@
-# Exclude vendored Ruby and caches from GitHub Pages build
-vendor/**
-vendor_backup/**
-SeattleLungProjectFamilyTree/**
-SeattleLungProject_Enhanced/**
-.bundle/**
-.jekyll-cache/**
-.sass-cache/**
-node_modules/**
