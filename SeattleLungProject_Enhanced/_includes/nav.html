@@ -1,0 +1,43 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                <img class="brand-logo-img" src="{{ site.baseurl }}/img/EXOIRI_Logo-removebg-preview.png"
+                    alt="EXOIRI Logo">
+                <div class="brand-text-container">
+                    <span class="brand-title">Exo-Immuno Research Institute</span>
+                    <span class="brand-subtitle">Advancing Research in Lung Transplantation & Immunology</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="{{ site.baseurl }}/">Home</a>
+                </li>
+                {% assign all_pages = site.pages | sort: 'nav_order' %}
+                {% for page in all_pages %}
+                {% if page.nav_exclude != true and page.title and page.title != '' and page.url != '/' and page.url !=
+                '/index.html' and page.layout %}
+                <li>
+                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

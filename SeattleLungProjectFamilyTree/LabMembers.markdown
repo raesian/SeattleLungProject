@@ -526,6 +526,30 @@ nav_order: 1
                     <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research and having the privilege to experience interning at a research institute as a high schooler! It's super easy to ask questions and socialize with others because of the friendly and open culture of the lab, which is also something super cool. Outside of the lab, I love to play volleyball, learn, and hang out with friends!</p>
                 </div>
             </div>
+            
+            <!-- Additional Interns -->
+            <div class = "card" id = "i44">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Molly Woodcock</h2>
+                    <h3>Sophomore</h3>
+                    <h3>Public Health - Global Health</h3>
+                    <p>My name is Molly Woodcock and I'm a sophomore attending the University of Washington majoring in Public Health - Global Health. I joined the lab in Fall of 2025 as a CT Biorepository intern. In my free time I enjoy cooking, playing tennis, and spending time with my friends. I plan to pursue a career in medicine, specifically for dermatology or reconstructive surgery.</p>
+                </div>
+            </div>
+            <div class = "card" id = "i45">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/AidanBorlet.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Aidan Borlet</h2>
+                    <h3>Freshman</h3>
+                    <h3>Biology</h3>
+                    <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
+                </div>
+            </div>
         `
 
         ft = `
@@ -748,6 +772,16 @@ nav_order: 1
                     <div class="intern-member" onclick="showMember('i15')">
                         <img src="{{ site.baseurl }}/img/EliKim.JPG" alt="Eli Kim">
                         <h3>Eli Kim</h3>
+                    </div>
+                    
+                    <!-- Additional Interns -->
+                    <div class="intern-member" onclick="showMember('i44')">
+                        <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg" alt="Molly Woodcock">
+                        <h3>Molly Woodcock</h3>
+                    </div>
+                    <div class="intern-member" onclick="showMember('i45')">
+                        <img src="{{ site.baseurl }}/img/AidanBorlet.jpg" alt="Aidan Borlet">
+                        <h3>Aidan Borlet</h3>
                     </div>
                 </div>
             </div>
@@ -1120,6 +1154,16 @@ nav_order: 1
             name: 'Olivia Qiao',
             title: 'Junior - Biology',
             bio: 'Olivia is a Junior at the University of Washington studying Biology. She joined Mulligan, Pal, Hwang Labs in the Spring of 2025 as a research intern. Outside of the lab, she enjoys painting, traveling, going to the beach, and learning new recipes to cook. Her long-term goal is to pursue a career in healthcare after graduating from the University of Washington.'
+        },
+        'i44': {
+            name: 'Molly Woodcock',
+            title: 'Sophomore - Public Health - Global Health',
+            bio: 'My name is Molly Woodcock and I\'m a sophomore attending the University of Washington majoring in Public Health - Global Health. I joined the lab in Fall of 2025 as a CT Biorepository intern. In my free time I enjoy cooking, playing tennis, and spending time with my friends. I plan to pursue a career in medicine, specifically for dermatology or reconstructive surgery.'
+        },
+        'i45': {
+            name: 'Aidan Borlet',
+            title: 'Freshman - Biology',
+            bio: 'Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.'
         }
     };
 

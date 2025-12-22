@@ -20,11 +20,13 @@
                 <li>
                     <a href="{{ site.baseurl }}/">Home</a>
                 </li>
-                {% assign sorted_pages = site.pages | where_exp: "page", "page.title" | sort: "nav_order" %}
-                {% for page in sorted_pages %}
+                {% assign all_pages = site.pages | sort: 'nav_order' %}
+                {% for page in all_pages %}
+                {% if page.nav_exclude != true and page.title and page.title != '' and page.url != '/' and page.url != '/index.html' and page.layout %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
