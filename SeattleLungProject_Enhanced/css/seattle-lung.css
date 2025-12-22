@@ -223,15 +223,17 @@ h6 {
 .hero-video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 550px;
+  max-width: 400px;
+  /* Reduced from 550px to make it smaller */
   margin: 0 auto;
-  height: 220px !important;
-  /* Fixed height to make it shorter vertically - using !important to override flex stretch */
-  min-height: 220px !important;
-  max-height: 220px !important;
+  height: 225px !important;
+  /* Reduced height proportionally */
+  min-height: 225px !important;
+  max-height: 225px !important;
+  aspect-ratio: 16 / 9;
+  /* Standard widescreen ratio */
   flex-shrink: 0;
   /* Prevent flex from shrinking the video */
-  /* Enforce the height limit */
   align-self: flex-start;
   /* Prevent flex from stretching this element */
 
