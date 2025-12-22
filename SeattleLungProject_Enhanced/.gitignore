@@ -1,0 +1,14 @@
+_site
+node_modules
+Gemfile.lock
+*~
+package-lock.json
+.jekyll-cache
+vendor/
+vendor_backup/
+SeattleLungProjectFamilyTree/
+SeattleLungProject_Enhanced/
+# Large video files (exceed GitHub's 100MB limit)
+**/DayInTheLife_Hesham.mov
+**/DayInTheLife_Hesham.mp4
+# Note: DayInTheLife.v2_Jonny.mp4 (34.44 MB) is included as it's under the limit
