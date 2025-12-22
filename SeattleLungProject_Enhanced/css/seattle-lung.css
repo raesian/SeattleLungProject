@@ -225,12 +225,11 @@ h6 {
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
-  height: auto;
-  /* Use aspect ratio instead of 100% height */
-  aspect-ratio: 16 / 9;
-  /* Standard video ratio, but we'll crop it */
-  max-height: 350px;
-  /* Limit height to make it shorter vertically */
+  height: 300px;
+  /* Fixed height to make it shorter vertically */
+  min-height: 300px;
+  max-height: 300px;
+  /* Enforce the height limit */
 
   /* Cleaner, Modern "Super Ellipse" / Soft shape */
   border-radius: 40px;
@@ -316,6 +315,10 @@ h6 {
   .hero-video-wrapper {
     transform: rotate(0deg);
     max-width: 300px;
+    height: 200px;
+    /* Shorter height on mobile */
+    min-height: 200px;
+    max-height: 200px;
   }
 }
 
