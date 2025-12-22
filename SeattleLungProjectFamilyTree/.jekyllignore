@@ -1,6 +1,0 @@
-# Exclude vendored Ruby and caches from GitHub Pages build
-vendor/**
-.bundle/**
-.jekyll-cache/**
-.sass-cache/**
-node_modules/**
