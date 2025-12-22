@@ -2,6 +2,7 @@
 vendor/**
 vendor_backup/**
 SeattleLungProjectFamilyTree/**
+SeattleLungProject_Enhanced/**
 .bundle/**
 .jekyll-cache/**
 .sass-cache/**
