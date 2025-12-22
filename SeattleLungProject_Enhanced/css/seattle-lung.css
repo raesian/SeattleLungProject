@@ -243,12 +243,14 @@ h6 {
   align-self: flex-start !important;
   /* Prevent flex from stretching this element */
   box-sizing: border-box !important;
+  overflow: hidden !important;
+  /* Ensure overflow is hidden */
 
   /* Cleaner, Modern "Super Ellipse" / Soft shape */
   border-radius: 40px;
-  overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  background: transparent;
+  background: #000;
+  /* Black background to prevent showing through */
   transform: none;
   transition: all 0.3s ease;
   border: none;
@@ -265,20 +267,19 @@ h6 {
   /* Use 100% to fill container */
   height: 100% !important;
   /* Use 100% to fill container */
-  max-width: 400px !important;
-  max-height: 150px !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
   min-width: 0 !important;
   min-height: 0 !important;
   /* Remove min constraints that might conflict */
   display: block !important;
   object-fit: cover !important;
   object-position: center center !important;
-  position: absolute !important;
+  position: relative !important;
+  /* Changed from absolute to relative to prevent black overlay */
   top: 0 !important;
   left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  /* Absolute positioning to ensure it fills container exactly */
+  /* Remove right and bottom to prevent stretching issues */
 }
 
 /* Content Wrapper (Right) */
