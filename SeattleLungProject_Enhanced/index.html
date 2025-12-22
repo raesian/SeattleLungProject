@@ -1,0 +1,134 @@
+---
+layout: default
+description:
+---
+
+<!-- Hero Section with Logo -->
+<!-- Hero Section with Video -->
+<div class="intro-header">
+    <div class="container hero-split-container">
+        <div class="row hero-flex-row">
+            <div class="col-md-6 col-sm-12">
+                <div class="hero-video-wrapper">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/1215.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="hero-content-wrapper">
+                    <img src="{{ site.baseurl }}/img/EXOIRI_Logo-removebg-preview.png" alt="EXOIRI Logo"
+                        class="hero-main-logo">
+                    <h1 class="hero-title">Our Mission</h1>
+                    <div class="hero-mission-text">
+                        <p>Our multidisciplinary research team aims to merge both basic and clinical research to improve
+                            care and
+                            outcomes for patients with pulmonary diseases.</p>
+                        <p>We are focused on understanding mechanisms and developing new prevention or treatment
+                            strategies in
+                            pulmonary diseases by combining basic science with translational research.</p>
+                    </div>
+                    <hr class="small" style="margin-left: 0; border-color: var(--color-accent-blue);">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container research-section">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Our Research Areas</h2>
+            <hr class="small">
+        </div>
+    </div>
+
+    <div class="research-grid stagger-children reveal-on-scroll">
+        <div class="research-card">
+            <div class="research-image">
+                <img src="{{ site.baseurl }}/img/HOOD.png" alt="Lung Exo-Immunology">
+            </div>
+            <div class="research-content">
+                <h3>Lung Exo-Immunology</h3>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <div class="research-image">
+                <img src="{{ site.baseurl }}/img/BloodProcessing.png" alt="Cardiac Exo-Immunology">
+            </div>
+            <div class="research-content">
+                <h3>Cardiac Exo-Immunology</h3>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <div class="research-image">
+                <img src="{{ site.baseurl }}/img/Image stream.png" alt="Immuno-Engineering">
+            </div>
+            <div class="research-content">
+                <h3>Immuno-Engineering</h3>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <div class="research-image">
+                <img src="{{ site.baseurl }}/img/Gel.png" alt="Clinical Research">
+            </div>
+            <div class="research-content">
+                <h3>Clinical Research</h3>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <div class="research-image">
+                <img src="{{ site.baseurl }}/img/Slides.png" alt="CT Translational CORE">
+            </div>
+            <div class="research-content">
+                <h3>CT Translational CORE</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mission Section Moved to Hero -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- Blog Posts Loop -->
+            {% for post in paginator.posts %}
+            <div class="post-preview">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <h2 class="post-title">{{ post.title }}</h2>
+                    {% if post.subtitle %}
+                    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+                    {% endif %}
+                </a>
+                <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif
+                    %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+            </div>
+            <hr>
+            {% endfor %}
+
+            <!-- Pager -->
+            {% if paginator.total_pages > 1 %}
+            <ul class="pager">
+                {% if paginator.previous_page %}
+                <li class="previous">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+                        Newer Posts</a>
+                </li>
+                {% endif %}
+                {% if paginator.next_page %}
+                <li class="next">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts
+                        &rarr;</a>
+                </li>
+                {% endif %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</div>

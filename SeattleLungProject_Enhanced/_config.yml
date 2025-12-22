@@ -1,0 +1,19 @@
+# Site settings
+title: Exo-Immuno Research Institute
+# Updated title for rebranding
+header-img: img/home-bg.jpg
+email: seattlelungproject@gmail.com
+description: "Exo-Immuno Research Institute - Advancing research in lung transplantation, exosome immunology, and cardiac surgery"
+baseurl: ""
+url: "https://exoiri.org"
+twitter_username: SeattleLung
+facebook_username:  SeattleLungProject
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","vendor","vendor_backup","**/vendor/**","SeattleLungProjectFamilyTree","**/SeattleLungProjectFamilyTree/**","SeattleLungProject_Enhanced","**/SeattleLungProject_Enhanced/**",".bundle",".jekyll-cache"]
+plugins:
+        - jekyll-paginate
