@@ -234,23 +234,21 @@ h6 {
   max-width: 400px !important;
   /* Fixed width to make it smaller */
   margin: 0 auto;
-  height: 150px !important;
-  /* Fixed height - matches HTML inline style */
-  min-height: 150px !important;
-  max-height: 150px !important;
+  height: 225px !important;
+  /* Fixed height */
+  min-height: 225px !important;
+  max-height: 225px !important;
   flex-shrink: 0 !important;
   /* Prevent flex from shrinking the video */
   align-self: flex-start !important;
   /* Prevent flex from stretching this element */
   box-sizing: border-box !important;
-  overflow: hidden !important;
-  /* Ensure overflow is hidden */
 
   /* Cleaner, Modern "Super Ellipse" / Soft shape */
   border-radius: 40px;
+  overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  background: #000;
-  /* Black background to prevent showing through */
+  background: transparent;
   transform: none;
   transition: all 0.3s ease;
   border: none;
@@ -264,22 +262,11 @@ h6 {
 
 .hero-video-wrapper video {
   width: 100% !important;
-  /* Use 100% to fill container */
   height: 100% !important;
-  /* Use 100% to fill container */
-  max-width: 100% !important;
-  max-height: 100% !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  /* Remove min constraints that might conflict */
   display: block !important;
   object-fit: cover !important;
   object-position: center center !important;
-  position: relative !important;
-  /* Changed from absolute to relative to prevent black overlay */
-  top: 0 !important;
-  left: 0 !important;
-  /* Remove right and bottom to prevent stretching issues */
+  /* Simple approach: fill container with cover */
 }
 
 /* Content Wrapper (Right) */
