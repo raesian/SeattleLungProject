@@ -229,6 +229,8 @@ h6 {
   /* Fixed height to make it shorter vertically - using !important to override flex stretch */
   min-height: 220px !important;
   max-height: 220px !important;
+  flex-shrink: 0;
+  /* Prevent flex from shrinking the video */
   /* Enforce the height limit */
   align-self: flex-start;
   /* Prevent flex from stretching this element */
