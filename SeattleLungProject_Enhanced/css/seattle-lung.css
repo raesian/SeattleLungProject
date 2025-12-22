@@ -213,8 +213,8 @@ h6 {
 /* Hero Flex Row for Equal Height */
 .hero-flex-row {
   display: flex;
-  align-items: stretch;
-  /* Forces equal height */
+  align-items: flex-start;
+  /* Changed from stretch to flex-start so video doesn't stretch */
   flex-wrap: wrap;
   /* Safety for mobile */
 }
@@ -225,11 +225,13 @@ h6 {
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
-  height: 220px;
-  /* Fixed height to make it shorter vertically */
-  min-height: 220px;
-  max-height: 220px;
+  height: 220px !important;
+  /* Fixed height to make it shorter vertically - using !important to override flex stretch */
+  min-height: 220px !important;
+  max-height: 220px !important;
   /* Enforce the height limit */
+  align-self: flex-start;
+  /* Prevent flex from stretching this element */
 
   /* Cleaner, Modern "Super Ellipse" / Soft shape */
   border-radius: 40px;
