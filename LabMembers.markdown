@@ -902,6 +902,24 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/Ved.jpg" alt="Vedant Kulkarni">
+                            <h4>Vedant Kulkarni</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Vedant is a junior at UW majoring in Molecular, Cellular, and Developmental Biology and minoring in Nutrition. He hopes to go to medical school after his undergraduate study to become a cardiologist. Outside of the lab, Vedant loves volunteering in medicine, working out with friends, going on day-trips, and being an avid member in the Husky Marching Band (Go Dawgs!).</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Sophomores -->
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/JanakiVenkatesh.JPG" alt="Janaki Venkatesh">
+                            <h4>Janaki Venkatesh</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
                             <img src="{{ site.baseurl }}/img/EasonCProfile.png" alt="Eason Chen">
                             <h4>Eason Chen</h4>
                             <span class="role">Sophomore</span>
@@ -918,51 +936,11 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/AlexanderRowland.JPEG" alt="Alexander Rowland">
-                            <h4>Alexander Rowland</h4>
-                            <span class="role">Sophomore</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Alexander Rowland is a sophomore at the University of Washington majoring in microbiology. He joined the lab as an OR intern in the spring of 2025.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/JanakiVenkatesh.JPG" alt="Janaki Venkatesh">
-                            <h4>Janaki Venkatesh</h4>
-                            <span class="role">Sophomore</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/EliKim.JPG" alt="Eli Kim">
-                            <h4>Eli Kim</h4>
-                            <span class="role">High School Senior</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
                             <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg" alt="Molly Woodcock">
                             <h4>Molly Woodcock</h4>
                             <span class="role">Sophomore</span>
                             <div class="bio-data" style="display:none;">
                                 <p>My name is Molly Woodcock and I'm a sophomore attending the University of Washington majoring in Public Health - Global Health. I joined the lab in Fall of 2025 as a CT Biorepository intern. In my free time I enjoy cooking, playing tennis, and spending time with my friends. I plan to pursue a career in medicine, specifically for dermatology or reconstructive surgery.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/AidanBorlet.jpg" alt="Aidan Borlet">
-                            <h4>Aidan Borlet</h4>
-                            <span class="role">Freshman</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/Ved.jpg" alt="Vedant Kulkarni">
-                            <h4>Vedant Kulkarni</h4>
-                            <span class="role">Junior</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Vedant is a junior at UW majoring in Molecular, Cellular, and Developmental Biology and minoring in Nutrition. He hopes to go to medical school after his undergraduate study to become a cardiologist. Outside of the lab, Vedant loves volunteering in medicine, working out with friends, going on day-trips, and being an avid member in the Husky Marching Band (Go Dawgs!).</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -982,6 +960,34 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/SruthiAlamuru.jpg" alt="Sruthi Alamuru">
+                            <h4>Sruthi Alamuru</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn '25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW's South Asian a cappella team UW Awaaz!</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AlexanderRowland.JPEG" alt="Alexander Rowland">
+                            <h4>Alexander Rowland</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Alexander Rowland is a sophomore at the University of Washington majoring in microbiology. He joined the lab as an OR intern in the spring of 2025.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Freshmen -->
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AidanBorlet.jpg" alt="Aidan Borlet">
+                            <h4>Aidan Borlet</h4>
+                            <span class="role">Freshman</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Undergraduate -->
+                        <div class="tree-card mini" onclick="openBioModal(this)">
                             <img src="{{ site.baseurl }}/img/LenaCzech.jpg" alt="Lena Czech">
                             <h4>Lena Czech</h4>
                             <span class="role">Undergraduate</span>
@@ -989,12 +995,14 @@ nav_order: 1
                                 <p>Lena is an undergraduate student at the University of Washington, double majoring in Biochemistry and Public Health–Global Health. She joined the lab in October 2025. Lena enjoys the outdoors, reading, and traveling. She plans to pursue an MD after completing her undergraduate degree!</p>
                             </div>
                         </div>
+                        
+                        <!-- High School -->
                         <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/SruthiAlamuru.jpg" alt="Sruthi Alamuru">
-                            <h4>Sruthi Alamuru</h4>
-                            <span class="role">Sophomore</span>
+                            <img src="{{ site.baseurl }}/img/EliKim.JPG" alt="Eli Kim">
+                            <h4>Eli Kim</h4>
+                            <span class="role">High School Senior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn '25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW's South Asian a cappella team UW Awaaz!</p>
+                                <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research.</p>
                             </div>
                         </div>
                     </div>
