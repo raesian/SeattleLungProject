@@ -9,7 +9,6 @@ nav_order: 2
 <!-- Page Header -->
 <div class="media-page-header">
   <h2>Lab Media Gallery</h2>
-  <p>Explore our collection of videos showcasing our research, stories, and impact.</p>
 </div>
 
 <!-- Spotlight Story Title -->
@@ -87,7 +86,7 @@ nav_order: 2
 .media-page-header {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 20px auto;
   padding: 20px;
 }
 
@@ -110,7 +109,7 @@ nav_order: 2
   color: #2c3e50 !important;
   text-align: center;
   margin-bottom: 40px;
-  margin-top: 60px;
+  margin-top: 20px;
   font-weight: 700;
   position: relative;
   padding-bottom: 15px;
