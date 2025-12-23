@@ -219,29 +219,26 @@ h6 {
   /* Safety for mobile */
 }
 
-/* Override Bootstrap column to allow video to shrink */
+/* Override Bootstrap column to allow video to scale naturally */
 .hero-flex-row .col-md-6:first-child {
-  max-width: 400px !important;
+  max-width: 50% !important;
+  /* Allow it to take up half the width on desktop */
   width: auto !important;
-  flex: 0 0 auto !important;
-  /* Force column to shrink to fit content */
+  flex: 0 1 auto !important;
 }
 
 /* Video Wrapper (Left) - Matches Content Height */
 .hero-video-wrapper {
   position: relative !important;
-  width: 400px !important;
+  width: 100% !important;
   max-width: 400px !important;
-  /* Fixed width to make it smaller */
+  /* Cap the size but allow it to be smaller */
   margin: 0 auto;
-  height: 225px !important;
-  /* Fixed height */
-  min-height: 225px !important;
-  max-height: 225px !important;
-  flex-shrink: 0 !important;
-  /* Prevent flex from shrinking the video */
-  align-self: flex-start !important;
-  /* Prevent flex from stretching this element */
+  height: auto !important;
+  min-height: none !important;
+  max-height: none !important;
+  flex-shrink: 1 !important;
+  align-self: center !important;
   box-sizing: border-box !important;
 
   /* Cleaner, Modern "Super Ellipse" / Soft shape */
