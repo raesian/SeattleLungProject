@@ -542,6 +542,27 @@ nav_order: 1
                     <p>Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern. In her free time, Janaki enjoys going on spontaneous day trips, hiking local trails, and volunteering with community health programs. She is passionate about understanding how social and environmental factors influence health and plans to pursue a career in medicine.</p>
                 </div>
             </div>
+            <div class = "card" onclick="openBioModal(this)" id = "i28">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/EasonCProfile.png"/>
+                </div>
+                <div class = "content">
+                    <h2>Eason Chen</h2>
+                    <h3>Sophomore</h3>
+                    <h3>Biology</h3>
+                    <p>Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school. Eason joined the Mulligan/Hwang/Pal lab in September 2024, and is currently training as a biorepository intern. Outside of the lab, Eason is a combat medic within the Washington Army National Guard and a part-time pianist.</p>
+                </div>
+            </div>
+            <div class = "card" onclick="openBioModal(this)" id = "i38">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/AdityaVarmaChekuri.JPG"/>
+                </div>
+                <div class = "content">
+                    <h2>Aditya Varma</h2>
+                    <h2>Sophomore - University of Washington</h2>
+                    <p>Aditya is currently a sophomore at the University of Washington. He joined the lab as an OR intern in the spring of 2025. His hobbies revolve around the outdoors—he loves to swim, ski, and go on hikes. In his free time, he enjoys volunteering at his local farmers market.</p>
+                </div>
+            </div>
             <div class = "card" onclick="openBioModal(this)" id = "i44">
                 <div class = "profile">
                     <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg"/>
@@ -584,27 +605,6 @@ nav_order: 1
                     <h3>Sophomore</h3>
                     <h3>Public Health-Global Health</h3>
                     <p>I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn '25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW's South Asian a cappella team UW Awaaz!</p>
-                </div>
-            </div>
-            <div class = "card" onclick="openBioModal(this)" id = "i28">
-                <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/EasonCProfile.png"/>
-                </div>
-                <div class = "content">
-                    <h2>Eason Chen</h2>
-                    <h3>Sophomore</h3>
-                    <h3>Biology</h3>
-                    <p>Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school. Eason joined the Mulligan/Hwang/Pal lab in September 2024, and is currently training as a biorepository intern. Outside of the lab, Eason is a combat medic within the Washington Army National Guard and a part-time pianist.</p>
-                </div>
-            </div>
-            <div class = "card" onclick="openBioModal(this)" id = "i38">
-                <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/AdityaVarmaChekuri.JPG"/>
-                </div>
-                <div class = "content">
-                    <h2>Aditya Varma</h2>
-                    <h2>Sophomore - University of Washington</h2>
-                    <p>Aditya is currently a sophomore at the University of Washington. He joined the lab as an OR intern in the spring of 2025. His hobbies revolve around the outdoors—he loves to swim, ski, and go on hikes. In his free time, he enjoys volunteering at his local farmers market.</p>
                 </div>
             </div>
             <div class = "card" onclick="openBioModal(this)" id = "i39">
@@ -986,6 +986,22 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/EasonCProfile.png" alt="Eason Chen">
+                            <h4>Eason Chen</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AdityaVarmaChekuri.JPG" alt="Aditya Varma">
+                            <h4>Aditya Varma</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Aditya is currently a sophomore at the University of Washington. He joined the lab as an OR intern in the spring of 2025.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
                             <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg" alt="Molly Woodcock">
                             <h4>Molly Woodcock</h4>
                             <span class="role">Sophomore</span>
@@ -1015,22 +1031,6 @@ nav_order: 1
                             <span class="role">Sophomore</span>
                             <div class="bio-data" style="display:none;">
                                 <p>I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn '25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW's South Asian a cappella team UW Awaaz!</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/EasonCProfile.png" alt="Eason Chen">
-                            <h4>Eason Chen</h4>
-                            <span class="role">Sophomore</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/AdityaVarmaChekuri.JPG" alt="Aditya Varma">
-                            <h4>Aditya Varma</h4>
-                            <span class="role">Sophomore</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Aditya is currently a sophomore at the University of Washington. He joined the lab as an OR intern in the spring of 2025.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
