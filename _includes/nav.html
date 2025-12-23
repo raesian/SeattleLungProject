@@ -27,13 +27,19 @@
                     <a href="{{ site.baseurl }}/">Home</a>
                 </li>
                 {% assign all_pages = site.pages | sort: 'nav_order' %}
+                {% assign seen_titles = '' | split: ',' %}
                 {% for page in all_pages %}
+                {% unless page.url contains '/SeattleLungProject_Enhanced/' %}
                 {% if page.nav_exclude != true and page.title and page.title != '' and page.url != '/' and page.url !=
                 '/index.html' and page.layout %}
+                {% unless seen_titles contains page.title %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
+                {% assign seen_titles = seen_titles | push: page.title %}
+                {% endunless %}
                 {% endif %}
+                {% endunless %}
                 {% endfor %}
             </ul>
         </div>
