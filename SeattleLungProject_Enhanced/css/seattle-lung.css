@@ -724,6 +724,10 @@ hr.small {
   object-position: center center;
 }
 
+.bio-modal-header img.adjust-pfp {
+  object-position: top center;
+}
+
 .bio-modal-header h2 {
   margin: 0;
   font-size: 1.8rem;

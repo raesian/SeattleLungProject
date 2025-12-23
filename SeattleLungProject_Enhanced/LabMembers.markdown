@@ -29,7 +29,9 @@ nav_order: 1
         const roleEl = card.querySelector('.role') || card.querySelector('.content h2:nth-child(2)');
         const role = roleEl ? roleEl.innerText : '';
         
-        const imgSrc = card.querySelector('img') ? card.querySelector('img').src : '';
+        const img = card.querySelector('img');
+        const imgSrc = img ? img.src : '';
+        const imgClass = img && img.classList.contains('adjust-pfp') ? 'adjust-pfp' : '';
         
         const bio = card.querySelector('.bio-data') ? card.querySelector('.bio-data').innerHTML : 'No biography available.';
 
@@ -39,7 +41,7 @@ nav_order: 1
                     <button class="bio-modal-close" onclick="closeBioModal(event)">×</button>
                     <div class="bio-modal-content">
                         <div class="bio-modal-header">
-                            ${imgSrc ? `<div class="bio-modal-header-img-wrapper"><img src="${imgSrc}" alt="${name}"></div>` : ''}
+                            ${imgSrc ? `<div class="bio-modal-header-img-wrapper"><img src="${imgSrc}" class="${imgClass}" alt="${name}"></div>` : ''}
                             <div class="bio-modal-info">
                                 <h3>${name}</h3>
                                 <h4>${role}</h4>
@@ -122,7 +124,7 @@ nav_order: 1
             </div>
             <div class = "card" id = "pi3" onclick="openBioModal(this)">
                 <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/JayPal.png"/>
+                    <img src="{{ site.baseurl }}/img/JayPal.png" class="adjust-pfp"/>
                 </div>
                 <div class = "content">
                     <h2>Dr. Jay Pal MD, PhD</h2>
@@ -131,7 +133,7 @@ nav_order: 1
             </div>
             <div class = "card" id = "pi4" onclick="openBioModal(this)">
                 <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/ArjuneDhanekula.jpg"/>
+                    <img src="{{ site.baseurl }}/img/ArjuneDhanekula.jpg" class="adjust-pfp"/>
                 </div>
                 <div class = "content">
                     <h2>Dr. Arjune Dhanekula, MD</h2>
@@ -140,7 +142,7 @@ nav_order: 1
             </div>
             <div class = "card" id = "pi5" onclick="openBioModal(this)">
                 <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/AprilStempien-Otero.jpg"/>
+                    <img src="{{ site.baseurl }}/img/AprilStempien-Otero.jpg" class="adjust-pfp"/>
                 </div>
                 <div class = "content">
                     <h2>Dr. Stempien-Otero, MD, FACC</h2>
@@ -648,17 +650,17 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card" id="card-jay-pal" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/JayPal.png" alt="Dr. Jay Pal">
+                            <img src="{{ site.baseurl }}/img/JayPal.png" alt="Dr. Jay Pal" class="adjust-pfp">
                             <h4>Dr. Jay Pal MD, PhD</h4>
                             <span class="role">Principal Investigator</span>
                         </div>
                         <div class="tree-card" id="card-arjune-dhanekula" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/ArjuneDhanekula.jpg" alt="Dr. Arjune Dhanekula">
+                            <img src="{{ site.baseurl }}/img/ArjuneDhanekula.jpg" alt="Dr. Arjune Dhanekula" class="adjust-pfp">
                             <h4>Dr. Arjune Dhanekula, MD</h4>
                             <span class="role">PGY-6, Investigator in Training</span>
                         </div>
                         <div class="tree-card" id="card-stempien-otero" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/AprilStempien-Otero.jpg" alt="Dr. Stempien-Otero">
+                            <img src="{{ site.baseurl }}/img/AprilStempien-Otero.jpg" alt="Dr. Stempien-Otero" class="adjust-pfp">
                             <h4>Dr. Stempien-Otero, MD, FACC</h4>
                             <span class="role">Principal Investigator</span>
                         </div>
