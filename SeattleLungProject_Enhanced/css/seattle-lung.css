@@ -716,8 +716,8 @@ hr.small {
 }
 
 .bio-modal-header img.adjust-pfp {
-  object-position: center 20%;
-  /* Lower the face within the circle */
+  object-position: center 5%;
+  /* Bring more of the forehead and top space into view */
 }
 
 .bio-modal-header h2 {
