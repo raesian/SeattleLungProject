@@ -300,6 +300,7 @@ h6 {
   line-height: 1.7;
   color: var(--color-text-muted);
   font-weight: 400;
+  text-align: justify;
 }
 
 /* Responsive */
