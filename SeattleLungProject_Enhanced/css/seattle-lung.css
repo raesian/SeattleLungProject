@@ -721,11 +721,14 @@ hr.small {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
 }
 
+/* Global class to shift focus to top of image (showing forehead/space) */
+.adjust-pfp,
+.card .profile img.adjust-pfp,
+.tree-card img.adjust-pfp,
 .bio-modal-header img.adjust-pfp {
-  object-position: top center;
+  object-position: top center !important;
 }
 
 .bio-modal-header h2 {
@@ -1085,11 +1088,4 @@ hr.small {
   margin-bottom: 15px;
 }
 
-/* ===========================
-   Image Position Adjustments
-   =========================== */
-#card-jay-pal img,
-#card-arjune-dhanekula img,
-#card-stempien-otero img {
-  object-position: top center;
-}
+/* Image Position Adjustments handled by .adjust-pfp class */
