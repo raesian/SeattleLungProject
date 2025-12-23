@@ -44,7 +44,7 @@ nav_order: 2
     
     <!-- Day in the Life: Hesham -->
     <div class="video-card">
-      <div class="video-wrapper video-wrapper-vertical">
+      <div class="video-wrapper">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/j_sQ130GSbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="video-content">
@@ -215,17 +215,11 @@ nav_order: 2
   aspect-ratio: 16 / 9;
 }
 
-.video-wrapper-vertical {
-  aspect-ratio: 9 / 16;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
 .video-wrapper video,
 .video-wrapper iframe {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   border: none;
 }
