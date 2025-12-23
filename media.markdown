@@ -44,10 +44,8 @@ nav_order: 2
     
     <!-- Day in the Life: Hesham -->
     <div class="video-card">
-      <div class="video-wrapper video-wrapper-youtube">
-        <div class="youtube-responsive-wrapper">
-          <iframe src="https://www.youtube.com/embed/j_sQ130GSbo?modestbranding=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+      <div class="video-wrapper">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/j_sQ130GSbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="video-content">
         <h3>Day in the Life: Hesham</h3>
@@ -215,35 +213,15 @@ nav_order: 2
   width: 100%;
   background: #000;
   aspect-ratio: 16 / 9;
-}
-
-.video-wrapper-youtube {
-  aspect-ratio: auto;
-  padding-bottom: 0;
-}
-
-.youtube-responsive-wrapper {
-  position: relative;
-  padding-bottom: 177.78%; /* 9:16 aspect ratio for vertical video */
-  height: 0;
-  overflow: hidden;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.youtube-responsive-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.video-wrapper video,
+.video-wrapper iframe {
   width: 100%;
   height: 100%;
-  border: none;
-}
-
-.video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   border: none;
 }
