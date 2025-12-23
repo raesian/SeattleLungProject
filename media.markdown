@@ -18,7 +18,7 @@ nav_order: 2
 <div class="featured-section">
   <div class="featured-video-card">
     <div class="featured-video-wrapper">
-      <video controls preload="metadata" poster="{{ site.baseurl }}/img/SpotlightThumbnail.jpg">
+      <video controls preload="metadata" poster="{{ site.baseurl }}/img/MichaelMulliganProfile.png">
         <source src="/img/Mulligan911Story.mp4" type="video/mp4">
         <source src="{{ site.baseurl }}/img/Mulligan911Story.mp4" type="video/mp4">
         Your browser does not support the video tag.
