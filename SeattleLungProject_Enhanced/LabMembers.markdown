@@ -358,16 +358,6 @@ nav_order: 1
                     <p>Shannon is a senior majoring in MCD Biology. She joined the lab as an OR intern in fall 2024. Outside of the lab, she enjoys cycling, snowboarding, and watching sunsets.</p>
                 </div>
             </div>
-            <div class = "card" id = "i41">
-                <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/LeahMajor.jpg"/>
-                </div>
-                <div class = "content">
-                    <h2>Leah Major</h2>
-                    <h2>Senior - MCD Biology & Microbiology</h2>
-                    <p>Leah is a third year student from Olympia Washington pursuing a degree in MCD biology and microbiology, with a minor in chemistry. She joined the lab in Spring 2025 as an OR intern, and hopes to gain experience in laboratory research during and after undergrad and obtain a doctorate in a biomedical field in the future. Leah is an author and illustrator with the Microphiles journal, and is an avid painter outside of school. She also loves the outdoors, reading, and watching comedy shows.</p>
-                </div>
-            </div>
             
             <!-- Juniors -->
             <div class = "card" id = "i13">
@@ -529,19 +519,19 @@ nav_order: 1
                     <p>Olivia is a Junior at the University of Washington studying Biology. She joined Mulligan, Pal, Hwang Labs in the Spring of 2025 as a research intern. Outside of the lab, she enjoys painting, traveling, going to the beach, and learning new recipes to cook. Her long-term goal is to pursue a career in healthcare after graduating from the University of Washington.</p>
                 </div>
             </div>
-            
-            <!-- Sophomores -->
-            <div class = "card" id = "i14">
+            <div class = "card" id = "i46">
                 <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/DerekNguyen.png"/>
+                    <img src="{{ site.baseurl }}/img/Ved.jpg"/>
                 </div>
                 <div class = "content">
-                    <h2>Derek Nguyen</h2>
-                    <h3>Sophomore</h3>
-                    <h3>Engineering</h3>
-                    <p>Derek is a sophomore majoring in Electrical and Computer Engineering. He joined the lab in June 2023 as an intern, assisting with lung and cardiac biorepository items and research. Outside the lab and school, he plays volleyball, cooks and does pottery. After graduation, he hopes to work in prosthetics and ultimately attend medical school.</p>
+                    <h2>Vedant Kulkarni</h2>
+                    <h3>Junior</h3>
+                    <h3>Molecular, Cellular, and Developmental Biology</h3>
+                    <p>Vedant is a junior at UW majoring in Molecular, Cellular, and Developmental Biology and minoring in Nutrition. He hopes to go to medical school after his undergraduate study to become a cardiologist. Outside of the lab, Vedant loves volunteering in medicine, working out with friends, going on day-trips, and being an avid member in the Husky Marching Band (Go Dawgs!).</p>
                 </div>
             </div>
+            
+            <!-- Sophomores -->
             <div class = "card" id = "i28">
                 <div class = "profile">
                     <img src="{{ site.baseurl }}/img/EasonCProfile.png"/>
@@ -583,21 +573,6 @@ nav_order: 1
                     <p>Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern. In her free time, Janaki enjoys going on spontaneous day trips, hiking local trails, and volunteering with community health programs. She is passionate about understanding how social and environmental factors influence health and plans to pursue a career in medicine.</p>
                 </div>
             </div>
-            
-            <!-- High School -->
-            <div class = "card" id = "i15">
-                <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/EliKim.JPG"/>
-                </div>
-                <div class = "content">
-                    <h2>Eli Kim</h2>
-                    <h3>High School Senior</h3>
-                    <h3>Engineering</h3>
-                    <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research and having the privilege to experience interning at a research institute as a high schooler! It's super easy to ask questions and socialize with others because of the friendly and open culture of the lab, which is also something super cool. Outside of the lab, I love to play volleyball, learn, and hang out with friends!</p>
-                </div>
-            </div>
-            
-            <!-- Additional Interns -->
             <div class = "card" id = "i44">
                 <div class = "profile">
                     <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg"/>
@@ -609,6 +584,40 @@ nav_order: 1
                     <p>My name is Molly Woodcock and I'm a sophomore attending the University of Washington majoring in Public Health - Global Health. I joined the lab in Fall of 2025 as a CT Biorepository intern. In my free time I enjoy cooking, playing tennis, and spending time with my friends. I plan to pursue a career in medicine, specifically for dermatology or reconstructive surgery.</p>
                 </div>
             </div>
+            <div class = "card" id = "i47">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/Jacob.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Jacob Rainey</h2>
+                    <h3>Sophomore</h3>
+                    <h3>Biology</h3>
+                    <p>Jacob is a sophomore studying Biology at the University of Washington and joined the lab in Fall 2025. Outside of Lab he enjoys running, reading and hanging out with friends.</p>
+                </div>
+            </div>
+            <div class = "card" id = "i48">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/JungLee.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Jung Lee</h2>
+                    <h3>Sophomore</h3>
+                    <h3>Biochemistry</h3>
+                    <p>Jung Lee is a sophomore at the University of Washington majoring in biochemistry. In her free time, she enjoys trying new food places and connecting with people. She is pursuing a career in medicine and is interested in learning how health, science, and patient care intersect.</p>
+                </div>
+            </div>
+            <div class = "card" id = "i49">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/SruthiAlamuru.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Sruthi Alamuru</h2>
+                    <h3>Sophomore</h3>
+                    <h3>Public Health-Global Health</h3>
+                    <p>I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn '25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW's South Asian a cappella team UW Awaaz!</p>
+                </div>
+            </div>
+            
             <div class = "card" id = "i45">
                 <div class = "profile">
                     <img src="{{ site.baseurl }}/img/AidanBorlet.jpg"/>
@@ -618,6 +627,29 @@ nav_order: 1
                     <h3>Freshman</h3>
                     <h3>Biology</h3>
                     <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
+                </div>
+            </div>
+            <div class = "card" id = "i50">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/LenaCzech.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Lena Czech</h2>
+                    <h3>Undergraduate</h3>
+                    <h3>Biochemistry and Public Health–Global Health</h3>
+                    <p>Lena is an undergraduate student at the University of Washington, double majoring in Biochemistry and Public Health–Global Health. She joined the lab in October 2025. Lena enjoys the outdoors, reading, and traveling. She plans to pursue an MD after completing her undergraduate degree!</p>
+                </div>
+            </div>
+            <!-- High School -->
+            <div class = "card" id = "i15">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/EliKim.JPG"/>
+                </div>
+                <div class = "content">
+                    <h2>Eli Kim</h2>
+                    <h3>High School Senior</h3>
+                    <h3>Engineering</h3>
+                    <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research and having the privilege to experience interning at a research institute as a high schooler! It's super easy to ask questions and socialize with others because of the friendly and open culture of the lab, which is also something super cool. Outside of the lab, I love to play volleyball, learn, and hang out with friends!</p>
                 </div>
             </div>
         `
@@ -815,14 +847,6 @@ nav_order: 1
                                 <p>Shannon is a senior majoring in MCD Biology. She joined the lab as an OR intern in fall 2024.</p>
                             </div>
                         </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/LeahMajor.jpg" alt="Leah Major">
-                            <h4>Leah Major</h4>
-                            <span class="role">Senior</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Leah is a third year student from Olympia Washington pursuing a degree in MCD biology and microbiology.</p>
-                            </div>
-                        </div>
                          <div class="tree-card mini" onclick="openBioModal(this)">
                             <img src="{{ site.baseurl }}/img/ArvindSunderamProfile.png" alt="Arvind Sunderam">
                             <h4>Arvind Sunderam</h4>
@@ -943,13 +967,12 @@ nav_order: 1
                                 <p>Olivia is a Junior at the University of Washington studying Biology. She joined Mulligan, Pal, Hwang Labs in the Spring of 2025 as a research intern.</p>
                             </div>
                         </div>
-                        
                         <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/DerekNguyen.png" alt="Derek Nguyen">
-                            <h4>Derek Nguyen</h4>
-                            <span class="role">Sophomore</span>
+                            <img src="{{ site.baseurl }}/img/Ved.jpg" alt="Vedant Kulkarni">
+                            <h4>Vedant Kulkarni</h4>
+                            <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Derek is a sophomore majoring in Electrical and Computer Engineering. He joined the lab in June 2023 as an intern, assisting with lung and cardiac biorepository items and research.</p>
+                                <p>Vedant is a junior at UW majoring in Molecular, Cellular, and Developmental Biology and minoring in Nutrition. He hopes to go to medical school after his undergraduate study to become a cardiologist. Outside of the lab, Vedant loves volunteering in medicine, working out with friends, going on day-trips, and being an avid member in the Husky Marching Band (Go Dawgs!).</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -985,35 +1008,11 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/EliKim.JPG" alt="Eli Kim">
-                            <h4>Eli Kim</h4>
-                            <span class="role">High School Senior</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
                             <img src="{{ site.baseurl }}/img/MollyWoodcock.jpg" alt="Molly Woodcock">
                             <h4>Molly Woodcock</h4>
                             <span class="role">Sophomore</span>
                             <div class="bio-data" style="display:none;">
                                 <p>My name is Molly Woodcock and I'm a sophomore attending the University of Washington majoring in Public Health - Global Health. I joined the lab in Fall of 2025 as a CT Biorepository intern. In my free time I enjoy cooking, playing tennis, and spending time with my friends. I plan to pursue a career in medicine, specifically for dermatology or reconstructive surgery.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/AidanBorlet.jpg" alt="Aidan Borlet">
-                            <h4>Aidan Borlet</h4>
-                            <span class="role">Freshman</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
-                            </div>
-                        </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/Ved.jpg" alt="Vedant Kulkarni">
-                            <h4>Vedant Kulkarni</h4>
-                            <span class="role">Junior</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Vedant is a junior at UW majoring in Molecular, Cellular, and Developmental Biology and minoring in Nutrition. He hopes to go to medical school after his undergraduate study to become a cardiologist. Outside of the lab, Vedant loves volunteering in medicine, working out with friends, going on day-trips, and being an avid member in the Husky Marching Band (Go Dawgs!).</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -1033,6 +1032,22 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/SruthiAlamuru.jpg" alt="Sruthi Alamuru">
+                            <h4>Sruthi Alamuru</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn '25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW's South Asian a cappella team UW Awaaz!</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AidanBorlet.jpg" alt="Aidan Borlet">
+                            <h4>Aidan Borlet</h4>
+                            <span class="role">Freshman</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
                             <img src="{{ site.baseurl }}/img/LenaCzech.jpg" alt="Lena Czech">
                             <h4>Lena Czech</h4>
                             <span class="role">Undergraduate</span>
@@ -1041,11 +1056,11 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/SruthiAlamuru.jpg" alt="Sruthi Alamuru">
-                            <h4>Sruthi Alamuru</h4>
-                            <span class="role">Sophomore</span>
+                            <img src="{{ site.baseurl }}/img/EliKim.JPG" alt="Eli Kim">
+                            <h4>Eli Kim</h4>
+                            <span class="role">High School Senior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn '25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW's South Asian a cappella team UW Awaaz!</p>
+                                <p>Hi, I'm Eli! I'm currently a senior in high school looking to major in something related to natural sciences! I've been in the Mulligan & Hwang lab for a year and love being able to learn about research.</p>
                             </div>
                         </div>
                     </div>
@@ -1297,11 +1312,6 @@ nav_order: 1
             title: 'Junior - Bioengineering',
             bio: 'My name is Arvind Sunderam, and I am a sophomore at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet.'
         },
-        'i14': {
-            name: 'Derek Nguyen',
-            title: 'Sophomore - Engineering',
-            bio: 'Derek is a sophomore majoring in Electrical and Computer Engineering. He joined the lab in June 2023 as an intern, assisting with lung and cardiac biorepository items and research. Outside the lab and school, he plays volleyball, cooks and does pottery.'
-        },
         'i15': {
             name: 'Eli Kim',
             title: 'High School Senior',
@@ -1402,11 +1412,7 @@ nav_order: 1
             title: 'Sophomore - Public Health-Global Health',
             bio: 'Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern. In her free time, Janaki enjoys going on spontaneous day trips, hiking local trails, and volunteering with community health programs. She is passionate about understanding how social and environmental factors influence health and plans to pursue a career in medicine.'
         },
-        'i41': {
-            name: 'Leah Major',
-            title: 'Senior - MCD Biology & Microbiology',
-            bio: 'Leah is a third year student from Olympia Washington pursuing a degree in MCD biology and microbiology, with a minor in chemistry. She joined the lab in Spring 2025 as an OR intern, and hopes to gain experience in laboratory research during and after undergrad and obtain a doctorate in a biomedical field in the future. Leah is an author and illustrator with the Microphiles journal, and is an avid painter outside of school. She also loves the outdoors, reading, and watching comedy shows.'
-        },
+
         'i20': {
             name: 'Kiana Koloushani',
             title: 'Senior - Biology-Physiology',
@@ -1431,6 +1437,31 @@ nav_order: 1
             name: 'Aidan Borlet',
             title: 'Freshman - Biology',
             bio: 'Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.'
+        },
+        'i46': {
+            name: 'Vedant Kulkarni',
+            title: 'Junior - Molecular, Cellular, and Developmental Biology',
+            bio: 'Vedant is a junior at UW majoring in Molecular, Cellular, and Developmental Biology and minoring in Nutrition. He hopes to go to medical school after his undergraduate study to become a cardiologist. Outside of the lab, Vedant loves volunteering in medicine, working out with friends, going on day-trips, and being an avid member in the Husky Marching Band (Go Dawgs!).'
+        },
+        'i47': {
+            name: 'Jacob Rainey',
+            title: 'Sophomore - Biology',
+            bio: 'Jacob is a sophomore studying Biology at the University of Washington and joined the lab in Fall 2025. Outside of Lab he enjoys running, reading and hanging out with friends.'
+        },
+        'i48': {
+            name: 'Jung Lee',
+            title: 'Sophomore - Biochemistry',
+            bio: 'Jung Lee is a sophomore at the University of Washington majoring in biochemistry. In her free time, she enjoys trying new food places and connecting with people. She is pursuing a career in medicine and is interested in learning how health, science, and patient care intersect.'
+        },
+        'i49': {
+            name: 'Sruthi Alamuru',
+            title: 'Sophomore - Public Health-Global Health',
+            bio: 'I am currently a sophomore at the UW majoring in Public Health-Global Health. I joined as an OR intern in Autumn \'25. My free time revolves mostly around music–I have been learning Indian classical vocal music since I was a toddler and I am a part of UW\'s South Asian a cappella team UW Awaaz!'
+        },
+        'i50': {
+            name: 'Lena Czech',
+            title: 'Undergraduate - Biochemistry and Public Health–Global Health',
+            bio: 'Lena is an undergraduate student at the University of Washington, double majoring in Biochemistry and Public Health–Global Health. She joined the lab in October 2025. Lena enjoys the outdoors, reading, and traveling. She plans to pursue an MD after completing her undergraduate degree!'
         }
     };
 
