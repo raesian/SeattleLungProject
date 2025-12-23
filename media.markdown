@@ -45,11 +45,7 @@ nav_order: 2
     <!-- Day in the Life: Hesham -->
     <div class="video-card">
       <div class="video-wrapper">
-        <video controls preload="metadata">
-          <source src="{{ site.baseurl }}/img/DayInTheLife_Hesham.mov" type="video/mp4">
-          <source src="{{ site.baseurl }}/img/DayInTheLife_Hesham.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/j_sQ130GSbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="video-content">
         <h3>Day in the Life: Hesham</h3>
@@ -219,11 +215,13 @@ nav_order: 2
   aspect-ratio: 16 / 9;
 }
 
-.video-wrapper video {
+.video-wrapper video,
+.video-wrapper iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border: none;
 }
 
 /* Video Content */

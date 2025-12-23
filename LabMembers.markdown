@@ -590,10 +590,6 @@ nav_order: 1
 
         ft = `
             <div class="family-tree-container">
-                <div class="tree-header">
-                    <h2>Lab Family Tree</h2>
-                </div>
-                
                 <!-- LEVEL 1: Principal Investigators -->
                 <div class="tree-section">
                     <h3 class="tree-section-title">Principal Investigators</h3>
