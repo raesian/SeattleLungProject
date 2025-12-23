@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Lab Members"
-description: ""
+description: "Our collaborative network of Principal Investigators, Staff, and Students."
 header-img: "img/home-bg.jpg"
 nav_order: 1
 ---
@@ -592,7 +592,6 @@ nav_order: 1
             <div class="family-tree-container">
                 <div class="tree-header">
                     <h2>Lab Family Tree</h2>
-                    <p>Our collaborative network of Principal Investigators, Staff, and Students.</p>
                 </div>
                 
                 <!-- LEVEL 1: Principal Investigators -->

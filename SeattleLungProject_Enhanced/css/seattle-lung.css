@@ -528,7 +528,7 @@ hr.small {
 .tree-header h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: var(--color-text);
+  color: #000000;
 }
 
 .tree-section {
