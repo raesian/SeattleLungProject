@@ -346,17 +346,6 @@ nav_order: 1
                     <p>Shannon is a senior majoring in MCD Biology. She joined the lab as an OR intern in fall 2024. Outside of the lab, she enjoys cycling, snowboarding, and watching sunsets.</p>
                 </div>
             </div>
-            <div class = "card" id = "i41">
-                <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/LeahMajor.jpg"/>
-                </div>
-                <div class = "content">
-                    <h2>Leah Major</h2>
-                    <h2>Senior - MCD Biology & Microbiology</h2>
-                    <p>Leah is a third year student from Olympia Washington pursuing a degree in MCD biology and microbiology, with a minor in chemistry. She joined the lab in Spring 2025 as an OR intern, and hopes to gain experience in laboratory research during and after undergrad and obtain a doctorate in a biomedical field in the future. Leah is an author and illustrator with the Microphiles journal, and is an avid painter outside of school. She also loves the outdoors, reading, and watching comedy shows.</p>
-                </div>
-            </div>
-            
             <!-- Juniors -->
             <div class = "card" id = "i13">
                 <div class = "profile">
@@ -519,17 +508,6 @@ nav_order: 1
             </div>
             
             <!-- Sophomores -->
-            <div class = "card" id = "i14">
-                <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/DerekNguyen.png"/>
-                </div>
-                <div class = "content">
-                    <h2>Derek Nguyen</h2>
-                    <h3>Sophomore</h3>
-                    <h3>Engineering</h3>
-                    <p>Derek is a sophomore majoring in Electrical and Computer Engineering. He joined the lab in June 2023 as an intern, assisting with lung and cardiac biorepository items and research. Outside the lab and school, he plays volleyball, cooks and does pottery. After graduation, he hopes to work in prosthetics and ultimately attend medical school.</p>
-                </div>
-            </div>
             <div class = "card" id = "i28">
                 <div class = "profile">
                     <img src="{{ site.baseurl }}/img/EasonCProfile.png"/>
@@ -803,14 +781,6 @@ nav_order: 1
                                 <p>Shannon is a senior majoring in MCD Biology. She joined the lab as an OR intern in fall 2024.</p>
                             </div>
                         </div>
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/LeahMajor.jpg" alt="Leah Major">
-                            <h4>Leah Major</h4>
-                            <span class="role">Senior</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Leah is a third year student from Olympia Washington pursuing a degree in MCD biology and microbiology.</p>
-                            </div>
-                        </div>
                          <div class="tree-card mini" onclick="openBioModal(this)">
                             <img src="{{ site.baseurl }}/img/ArvindSunderamProfile.png" alt="Arvind Sunderam">
                             <h4>Arvind Sunderam</h4>
@@ -929,15 +899,6 @@ nav_order: 1
                             <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
                                 <p>Olivia is a Junior at the University of Washington studying Biology. She joined Mulligan, Pal, Hwang Labs in the Spring of 2025 as a research intern.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/DerekNguyen.png" alt="Derek Nguyen">
-                            <h4>Derek Nguyen</h4>
-                            <span class="role">Sophomore</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Derek is a sophomore majoring in Electrical and Computer Engineering. He joined the lab in June 2023 as an intern, assisting with lung and cardiac biorepository items and research.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -1285,11 +1246,6 @@ nav_order: 1
             title: 'Junior - Bioengineering',
             bio: 'My name is Arvind Sunderam, and I am a sophomore at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet.'
         },
-        'i14': {
-            name: 'Derek Nguyen',
-            title: 'Sophomore - Engineering',
-            bio: 'Derek is a sophomore majoring in Electrical and Computer Engineering. He joined the lab in June 2023 as an intern, assisting with lung and cardiac biorepository items and research. Outside the lab and school, he plays volleyball, cooks and does pottery.'
-        },
         'i15': {
             name: 'Eli Kim',
             title: 'High School Senior',
@@ -1389,11 +1345,6 @@ nav_order: 1
             name: 'Janaki Venkatesh',
             title: 'Sophomore - Public Health-Global Health',
             bio: 'Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern. In her free time, Janaki enjoys going on spontaneous day trips, hiking local trails, and volunteering with community health programs. She is passionate about understanding how social and environmental factors influence health and plans to pursue a career in medicine.'
-        },
-        'i41': {
-            name: 'Leah Major',
-            title: 'Senior - MCD Biology & Microbiology',
-            bio: 'Leah is a third year student from Olympia Washington pursuing a degree in MCD biology and microbiology, with a minor in chemistry. She joined the lab in Spring 2025 as an OR intern, and hopes to gain experience in laboratory research during and after undergrad and obtain a doctorate in a biomedical field in the future. Leah is an author and illustrator with the Microphiles journal, and is an avid painter outside of school. She also loves the outdoors, reading, and watching comedy shows.'
         },
         'i20': {
             name: 'Kiana Koloushani',
