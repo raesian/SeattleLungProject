@@ -300,7 +300,11 @@ h6 {
   line-height: 1.7;
   color: var(--color-text-muted);
   font-weight: 400;
-  text-align: justify;
+  text-align: justify !important;
+}
+
+.hero-mission-text p {
+  text-align: justify !important;
 }
 
 /* Responsive */
