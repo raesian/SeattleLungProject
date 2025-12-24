@@ -252,7 +252,7 @@ nav_order: 1
                     <h2>Aaron Inthavong</h2>
                     <h3>Senior</h3>
                     <h3>Bioengineering</h3>
-                    <p>Aaron is a junior majoring in Bioengineering. He joined the lab in October of 2023 as an intern, assisting with lung and cardiac biorepository items.  Outside of the lab he enjoys playing golf, cooking, and crime shows. He aims to further his education in graduate school to learn the tools needed to tackle future medical needs.</p>
+                    <p>Aaron is a senior majoring in Bioengineering. He joined the lab in October of 2023 as an intern, assisting with lung and cardiac biorepository items.  Outside of the lab he enjoys playing golf, cooking, and crime shows. He aims to further his education in graduate school to learn the tools needed to tackle future medical needs.</p>
                 </div>
             </div>
             <div class = "card" id = "i7">
@@ -263,7 +263,7 @@ nav_order: 1
                     <h2>Emily Sui</h2>
                     <h3>Senior</h3>
                     <h3>MCD Biology with Honours</h3>
-                    <p>Emily is a Junior majoring in Molecular, Cellular, and Developmental Biology and double minoring in Global Health and French. She's been part of the lab since September of 2023 and first started off as a biorepository intern. In this role, she processed cardiac surgery and lung transplant samples. She is currently working on a project that looks at medium and large sized microvesicles and how the antibodies expressed differ in IPF and CF patients. Outside of school and lab Emily likes to go on hikes in the PNW, create cute ceramics, and catch up with friends and faculty over coffee. After her undergraduate education, Emily is hoping to attend medical school and study general surgery.</p>
+                    <p>Emily is a senior majoring in Molecular, Cellular, and Developmental Biology and double minoring in Global Health and French. She's been part of the lab since September of 2023 and first started off as a biorepository intern. In this role, she processed cardiac surgery and lung transplant samples. She is currently working on a project that looks at medium and large sized microvesicles and how the antibodies expressed differ in IPF and CF patients. Outside of school and lab Emily likes to go on hikes in the PNW, create cute ceramics, and catch up with friends and faculty over coffee. After her undergraduate education, Emily is hoping to attend medical school and study general surgery.</p>
                 </div>
             </div>
             <div class = "card" id = "i9">
@@ -296,7 +296,7 @@ nav_order: 1
                     <h2>Hana Sugihara</h2>
                     <h3>Senior</h3>
                     <h3>Biochemistry and Public Health-Global Health</h3>
-                    <p>Hana is a junior majoring in Biochemistry and Public Health-Global Health with Departmental Honors. After undergrad, she hopes to pursue further education in medical school to explore the intersections between clinical care, biomedical research, and social determinants of health. She joined the lab in January 2024 as an OR Biorepository Intern. She plays the flute and piccolo in the UW Campus Philharmonic Orchestra. Beyond academics, Hana enjoys reading, walking with her dog Jack, learning new languages, and traveling with family and friends.</p>
+                    <p>Hana is a senior majoring in Biochemistry and Public Health-Global Health with Departmental Honors. After undergrad, she hopes to pursue further education in medical school to explore the intersections between clinical care, biomedical research, and social determinants of health. She joined the lab in January 2024 as an OR Biorepository Intern. She plays the flute and piccolo in the UW Campus Philharmonic Orchestra. Beyond academics, Hana enjoys reading, walking with her dog Jack, learning new languages, and traveling with family and friends.</p>
                 </div>
             </div>
             <div class = "card" id = "i20">
@@ -318,7 +318,7 @@ nav_order: 1
                     <h2>Patrick Hong</h2>
                     <h3>Senior</h3>
                     <h3>Public Health (BS)</h3>
-                    <p>Patrick is a junior at the University of Washington studying Public Health for the pre-med route
+                    <p>Patrick is a senior at the University of Washington studying Public Health for the pre-med route
                     and just recently joined Mulligan, Pal, Hwang Labs. He spent 11 years playing golf and played
                     one year on the University of Washington Men's Golf team. He still enjoys playing golf in his free
                     time but is more focused on studying for medical school.</p>
@@ -355,7 +355,7 @@ nav_order: 1
                     <h2>Arvind Sunderam</h2>
                     <h3>Junior</h3>
                     <h3>Bioengineering</h3>
-                    <p>My name is Arvind Sunderam, and I am a sophomore at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet. </p>
+                    <p>My name is Arvind Sunderam, and I am a junior at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet. </p>
                 </div>
             </div>
             <div class = "card" id = "i18">
@@ -442,7 +442,7 @@ nav_order: 1
                     <h2>Tiff (Wai Tung) Chan</h2>
                     <h3>Junior</h3>
                     <h3>Biology</h3>
-                    <p>Tiff is a rising junior studying MCD Biology. She joined the lab in September 2024 as a research intern. She assists with blood and tissue processing alongside with general lab items and helps the lab manager and technician for experiments. Outside of the lab, tiff enjoys playing volleyball and hanging out with friends. Going on, she plans to attend medical school in Hong Kong after graduating from the University of Washington.</p> 
+                    <p>Tiff is a junior studying MCD Biology. She joined the lab in September 2024 as a research intern. She assists with blood and tissue processing alongside with general lab items and helps the lab manager and technician for experiments. Outside of the lab, tiff enjoys playing volleyball and hanging out with friends. Going on, she plans to attend medical school in Hong Kong after graduating from the University of Washington.</p> 
                 </div>
             </div>
             <div class = "card" id = "i34">
@@ -453,7 +453,7 @@ nav_order: 1
                     <h2>Pat Junwaowam</h2>
                     <h3>Junior</h3>
                     <h3>Bioengineering</h3>
-                    <p>Pat is going into his junior year studying Bioengineering. He is planning to attend medical school after finishing his undergrad at University of Washington. In his free time, Pat enjoys playing soccer, hanging out with friends, and finding new food spots.</p> 
+                    <p>Pat is a junior studying Bioengineering. He is planning to attend medical school after finishing his undergrad at University of Washington. In his free time, Pat enjoys playing soccer, hanging out with friends, and finding new food spots.</p> 
                 </div>
             </div>
             <div class = "card" id = "i35">
@@ -709,7 +709,7 @@ nav_order: 1
                             <h4>Aaron Inthavong</h4>
                             <span class="role">Senior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Aaron is a junior majoring in Bioengineering. He joined the lab in October of 2023 as an intern, assisting with lung and cardiac biorepository items. Outside of the lab he enjoys playing golf, cooking, and crime shows. He aims to further his education in graduate school to learn the tools needed to tackle future medical needs.</p>
+                                <p>Aaron is a senior majoring in Bioengineering. He joined the lab in October of 2023 as an intern, assisting with lung and cardiac biorepository items. Outside of the lab he enjoys playing golf, cooking, and crime shows. He aims to further his education in graduate school to learn the tools needed to tackle future medical needs.</p>
                             </div>
                         </div>
                          <div class="tree-card mini" onclick="openBioModal(this)">
@@ -717,7 +717,7 @@ nav_order: 1
                             <h4>Emily Sui</h4>
                             <span class="role">Senior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Emily is a Junior majoring in Molecular, Cellular, and Developmental Biology and double minoring in Global Health and French. She's been part of the lab since September of 2023 and first started off as a biorepository intern.</p>
+                                <p>Emily is a senior majoring in Molecular, Cellular, and Developmental Biology and double minoring in Global Health and French. She's been part of the lab since September of 2023 and first started off as a biorepository intern.</p>
                             </div>
                         </div>
                          <div class="tree-card mini" onclick="openBioModal(this)">
@@ -741,7 +741,7 @@ nav_order: 1
                             <h4>Hana Sugihara</h4>
                             <span class="role">Senior</span>
                              <div class="bio-data" style="display:none;">
-                                <p>Hana is a junior majoring in Biochemistry and Public Health-Global Health with Departmental Honors. After undergrad, she hopes to pursue further education in medical school.</p>
+                                <p>Hana is a senior majoring in Biochemistry and Public Health-Global Health with Departmental Honors. After undergrad, she hopes to pursue further education in medical school.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -757,7 +757,7 @@ nav_order: 1
                             <h4>Patrick Hong</h4>
                             <span class="role">Senior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Patrick is a junior at the University of Washington studying Public Health for the pre-med route.</p>
+                                <p>Patrick is a senior at the University of Washington studying Public Health for the pre-med route.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -781,7 +781,7 @@ nav_order: 1
                             <h4>Arvind Sunderam</h4>
                             <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>My name is Arvind Sunderam, and I am a sophomore at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet.</p>
+                                <p>My name is Arvind Sunderam, and I am a junior at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet.</p>
                             </div>
                         </div>
                          <div class="tree-card mini" onclick="openBioModal(this)">
@@ -845,7 +845,7 @@ nav_order: 1
                             <h4>Tiff (Wai Tung) Chan</h4>
                             <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Tiff is a rising junior studying MCD Biology. She joined the lab in September 2024 as a research intern. She assists with blood and tissue processing alongside with general lab items and helps the lab manager and technician for experiments.</p>
+                                <p>Tiff is a junior studying MCD Biology. She joined the lab in September 2024 as a research intern. She assists with blood and tissue processing alongside with general lab items and helps the lab manager and technician for experiments.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -853,7 +853,7 @@ nav_order: 1
                             <h4>Pat Junwaowam</h4>
                             <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Pat is going into his junior year studying Bioengineering. He is planning to attend medical school after finishing his undergrad at University of Washington.</p>
+                                <p>Pat is a junior studying Bioengineering. He is planning to attend medical school after finishing his undergrad at University of Washington.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -1230,12 +1230,12 @@ nav_order: 1
         'i6': {
             name: 'Aaron Inthavong',
             title: 'Senior - Bioengineering',
-            bio: 'Aaron is a junior majoring in Bioengineering. He joined the lab in October of 2023 as an intern, assisting with lung and cardiac biorepository items. Outside of the lab he enjoys playing golf, cooking, and crime shows.'
+            bio: 'Aaron is a senior majoring in Bioengineering. He joined the lab in October of 2023 as an intern, assisting with lung and cardiac biorepository items. Outside of the lab he enjoys playing golf, cooking, and crime shows.'
         },
         'i7': {
             name: 'Emily Sui',
             title: 'Senior - MCD Biology',
-            bio: 'Emily is a Junior majoring in Molecular, Cellular, and Developmental Biology and double minoring in Global Health and French. She\'s been part of the lab since September of 2023 and first started off as a biorepository intern.'
+            bio: 'Emily is a senior majoring in Molecular, Cellular, and Developmental Biology and double minoring in Global Health and French. She\'s been part of the lab since September of 2023 and first started off as a biorepository intern.'
         },
         'i9': {
             name: 'Stephanie Wong',
@@ -1245,7 +1245,7 @@ nav_order: 1
         'i13': {
             name: 'Arvind Sunderam',
             title: 'Junior - Bioengineering',
-            bio: 'My name is Arvind Sunderam, and I am a sophomore at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet.'
+            bio: 'My name is Arvind Sunderam, and I am a junior at UW looking to study Bioengineering. Some of my interests include working out, biking, and hanging out with friends. When I grow up, I want to be a surgeon, but I am not sure what type yet.'
         },
         'i15': {
             name: 'Eli Kim',
@@ -1260,7 +1260,7 @@ nav_order: 1
         'i17': {
             name: 'Hana Sugihara',
             title: 'Senior - Biochemistry',
-            bio: 'Hana is a junior majoring in Biochemistry and Public Health-Global Health with Departmental Honors. After undergrad, she hopes to pursue further education in medical school to explore the intersections between clinical care, biomedical research, and social determinants of health.'
+            bio: 'Hana is a senior majoring in Biochemistry and Public Health-Global Health with Departmental Honors. After undergrad, she hopes to pursue further education in medical school to explore the intersections between clinical care, biomedical research, and social determinants of health.'
         },
         'i18': {
             name: 'Cat Walker',
@@ -1285,7 +1285,7 @@ nav_order: 1
         'i25': {
             name: 'Patrick Hong',
             title: 'Senior - Public Health',
-            bio: 'Patrick is a junior at the University of Washington studying Public Health for the pre-med route and just recently joined Mulligan, Pal, Hwang Labs. He spent 11 years playing golf and played one year on the University of Washington Men\'s Golf team.'
+            bio: 'Patrick is a senior at the University of Washington studying Public Health for the pre-med route and just recently joined Mulligan, Pal, Hwang Labs. He spent 11 years playing golf and played one year on the University of Washington Men\'s Golf team.'
         },
         'i27': {
             name: 'Jonathan Chan-Tang',
@@ -1315,12 +1315,12 @@ nav_order: 1
         'i33': {
             name: 'Tiff (Wai Tung) Chan',
             title: 'Junior - Biology',
-            bio: 'Tiff is a rising junior studying MCD Biology. She joined the lab in September 2024 as a research intern. She assists with blood and tissue processing alongside with general lab items and helps the lab manager and technician for experiments.'
+            bio: 'Tiff is a junior studying MCD Biology. She joined the lab in September 2024 as a research intern. She assists with blood and tissue processing alongside with general lab items and helps the lab manager and technician for experiments.'
         },
         'i34': {
             name: 'Pat Junwaowam',
             title: 'Junior - Bioengineering',
-            bio: 'Pat is going into his junior year studying Bioengineering. He is planning to attend medical school after finishing his undergrad at University of Washington. In his free time, Pat enjoys playing soccer, hanging out with friends, and finding new food spots.'
+            bio: 'Pat is a junior studying Bioengineering. He is planning to attend medical school after finishing his undergrad at University of Washington. In his free time, Pat enjoys playing soccer, hanging out with friends, and finding new food spots.'
         },
         'i35': {
             name: 'Mia Kamiya',
