@@ -970,6 +970,14 @@ nav_order: 1
                                 <p>Alexander Rowland is a sophomore at the University of Washington majoring in microbiology. He joined the lab as an OR intern in the spring of 2025.</p>
                             </div>
                         </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/LenaCzech.jpg" alt="Lena Czech">
+                            <h4>Lena Czech</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Lena is an undergraduate student at the University of Washington, double majoring in Biochemistry and Public Health–Global Health. She joined the lab in October 2025. Lena enjoys the outdoors, reading, and traveling. She plans to pursue an MD after completing her undergraduate degree!</p>
+                            </div>
+                        </div>
                         
                         <!-- Freshmen -->
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -978,16 +986,6 @@ nav_order: 1
                             <span class="role">Freshman</span>
                             <div class="bio-data" style="display:none;">
                                 <p>Aidan Borlet is a first year biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Undergraduate -->
-                        <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/LenaCzech.jpg" alt="Lena Czech">
-                            <h4>Lena Czech</h4>
-                            <span class="role">Undergraduate</span>
-                            <div class="bio-data" style="display:none;">
-                                <p>Lena is an undergraduate student at the University of Washington, double majoring in Biochemistry and Public Health–Global Health. She joined the lab in October 2025. Lena enjoys the outdoors, reading, and traveling. She plans to pursue an MD after completing her undergraduate degree!</p>
                             </div>
                         </div>
                         
