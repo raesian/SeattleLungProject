@@ -398,7 +398,7 @@ nav_order: 1
                 <div class = "content">
                     <h2>Ian Ho</h2>
                     <h3>Junior</h3>
-                    <p> Ian is a second year international student from Taiwan. Loving Chemistry and Biology lead him to biochemistry and an internship in this lab.</p>
+                    <p> Ian is a junior international student from Taiwan. Loving Chemistry and Biology lead him to biochemistry and an internship in this lab.</p>
                 </div>
             </div>
             <div class = "card" id = "i27">
@@ -420,7 +420,7 @@ nav_order: 1
                     <h2>Billy (Won Bin) Hong</h2>
                     <h3>Junior</h3>
                     <h3>Biology</h3>
-                    <p>Won Bin (Billy) Hong is going into his junior year of college at the University of Washington Seattle and he is a general biology major. Some of Billy's hobbies include enjoying good food, thrifting, exploring the fine line between investment strategy and poker night, and practicing  probability in real-world settings.</p>
+                    <p>Won Bin (Billy) Hong is a junior at the University of Washington Seattle and he is a general biology major. Some of Billy's hobbies include enjoying good food, thrifting, exploring the fine line between investment strategy and poker night, and practicing  probability in real-world settings.</p>
                 </div>
             </div>
             <div class = "card" id = "i30">
@@ -516,7 +516,7 @@ nav_order: 1
                     <h2>Eason Chen</h2>
                     <h3>Sophomore</h3>
                     <h3>Biology</h3>
-                    <p>Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school. Eason joined the Mulligan/Hwang/Pal lab in September 2024, and is currently training as a biorepository intern. Outside of the lab, Eason is a combat medic within the Washington Army National Guard and a part-time pianist.</p>
+                    <p>Eason is a sophomore studying Biology at the University of Washington Bothell with the intention of attending medical school. Eason joined the Mulligan/Hwang/Pal lab in September 2024, and is currently training as a biorepository intern. Outside of the lab, Eason is a combat medic within the Washington Army National Guard and a part-time pianist.</p>
                 </div>
             </div>
             <div class = "card" id = "i38">
@@ -813,7 +813,7 @@ nav_order: 1
                             <h4>Ian Ho</h4>
                             <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Ian is a second year international student from Taiwan. Loving Chemistry and Biology lead him to biochemistry and an internship in this lab.</p>
+                                <p>Ian is a junior international student from Taiwan. Loving Chemistry and Biology lead him to biochemistry and an internship in this lab.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -829,7 +829,7 @@ nav_order: 1
                             <h4>Billy (Won Bin) Hong</h4>
                             <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Won Bin (Billy) Hong is going into his junior year of college at the University of Washington Seattle and he is a general biology major. Some of Billy's hobbies include enjoying good food, thrifting, exploring the fine line between investment strategy and poker night, and practicing probability in real-world settings.</p>
+                                <p>Won Bin (Billy) Hong is a junior at the University of Washington Seattle and he is a general biology major. Some of Billy's hobbies include enjoying good food, thrifting, exploring the fine line between investment strategy and poker night, and practicing probability in real-world settings.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -919,7 +919,7 @@ nav_order: 1
                             <h4>Eason Chen</h4>
                             <span class="role">Sophomore</span>
                             <div class="bio-data" style="display:none;">
-                                <p>Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school.</p>
+                                <p>Eason is a sophomore studying Biology at the University of Washington Bothell with the intention of attending medical school.</p>
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -1280,7 +1280,7 @@ nav_order: 1
         'i23': {
             name: 'Ian Ho',
             title: 'Junior - Biochemistry',
-            bio: 'Ian is a second year international student from Taiwan. Loving Chemistry and Biology lead him to biochemistry and an internship in this lab.'
+            bio: 'Ian is a junior international student from Taiwan. Loving Chemistry and Biology lead him to biochemistry and an internship in this lab.'
         },
         'i25': {
             name: 'Patrick Hong',
@@ -1295,12 +1295,12 @@ nav_order: 1
         'i28': {
             name: 'Eason Chen',
             title: 'Sophomore - Biology',
-            bio: 'Eason is a freshman studying Biology at the University of Washington Bothell with the intention of attending medical school. Eason joined the Mulligan/Hwang/Pal lab in September 2024, and is currently training as a biorepository intern.'
+            bio: 'Eason is a sophomore studying Biology at the University of Washington Bothell with the intention of attending medical school. Eason joined the Mulligan/Hwang/Pal lab in September 2024, and is currently training as a biorepository intern.'
         },
         'i29': {
             name: 'Billy (Won Bin) Hong',
             title: 'Junior - Biology',
-            bio: 'Won Bin (Billy) Hong is going into his junior year of college at the University of Washington Seattle and he is a general biology major. Some of Billy\'s hobbies include enjoying good food, thrifting, exploring the fine line between investment strategy and poker night, and practicing probability in real-world settings.'
+            bio: 'Won Bin (Billy) Hong is a junior at the University of Washington Seattle and he is a general biology major. Some of Billy\'s hobbies include enjoying good food, thrifting, exploring the fine line between investment strategy and poker night, and practicing probability in real-world settings.'
         },
         'i30': {
             name: 'Adriana Ching',
