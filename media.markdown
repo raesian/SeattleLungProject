@@ -18,7 +18,7 @@ nav_order: 2
 <div class="featured-section">
   <div class="featured-video-card">
     <div class="featured-video-wrapper">
-      <video controls preload="metadata" poster="{{ site.baseurl }}/img/MichaelMulliganLoadingScreen.png">
+      <video controls preload="metadata" poster="/img/MichaelMulliganLoadingScreen.png">
         <source src="/img/Mulligan911Story.mp4" type="video/mp4">
         <source src="{{ site.baseurl }}/img/Mulligan911Story.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -59,7 +59,7 @@ nav_order: 2
     <!-- Day in the Life: Jonny -->
     <div class="video-card">
       <div class="video-wrapper">
-        <video controls preload="metadata" poster="{{ site.baseurl }}/img/MichaelMulliganLoadingScreen.png">
+        <video controls preload="metadata" poster="/img/MichaelMulliganLoadingScreen.png">
           <source src="{{ site.baseurl }}/img/DayInTheLife.v2_Jonny.mov" type="video/mp4">
           <source src="{{ site.baseurl }}/img/DayInTheLife.v2_Jonny.mp4" type="video/mp4">
           Your browser does not support the video tag.
