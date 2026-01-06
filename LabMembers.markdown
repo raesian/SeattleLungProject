@@ -508,7 +508,7 @@ nav_order: 1
             </div>
             <div class = "card" id = "i47">
                 <div class = "profile">
-                    <img src="{{ site.baseurl }}/img/SarahOConnell.jpg"/>
+                    <img src="{{ site.baseurl }}/img/SarahO.jpg"/>
                 </div>
                 <div class = "content">
                     <h2>Sarah O'Connell</h2>
@@ -925,7 +925,7 @@ nav_order: 1
                             </div>
                         </div>
                         <div class="tree-card mini" onclick="openBioModal(this)">
-                            <img src="{{ site.baseurl }}/img/SarahOConnell.jpg" alt="Sarah O'Connell">
+                            <img src="{{ site.baseurl }}/img/SarahO.jpg" alt="Sarah O'Connell">
                             <h4>Sarah O'Connell</h4>
                             <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
