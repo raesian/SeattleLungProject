@@ -981,6 +981,15 @@ hr.small {
   height: 90px;
 }
 
+/* Adjust specific tree-card image positions */
+.tree-card.mini img[src*="SarahO"] {
+  object-position: right center;
+}
+
+.tree-card.mini img[src*="TrentonLau"] {
+  object-position: left center;
+}
+
 .tree-card.mini h4 {
   font-size: 0.95rem;
 }

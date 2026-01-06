@@ -767,6 +767,15 @@ hr.small {
   object-fit: cover;
 }
 
+/* Adjust specific profile image positions */
+.card .profile img[src*="SarahO"] {
+  object-position: right center;
+}
+
+.card .profile img[src*="TrentonLau"] {
+  object-position: left center;
+}
+
 .card .content h2 {
   font-size: 1.25rem;
   margin-bottom: 5px;
@@ -947,6 +956,15 @@ hr.small {
 .tree-card.mini img {
   width: 90px;
   height: 90px;
+}
+
+/* Adjust specific tree-card image positions */
+.tree-card.mini img[src*="SarahO"] {
+  object-position: right center;
+}
+
+.tree-card.mini img[src*="TrentonLau"] {
+  object-position: left center;
 }
 
 .tree-card.mini h4 {
