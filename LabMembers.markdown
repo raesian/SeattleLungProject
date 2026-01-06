@@ -549,6 +549,16 @@ nav_order: 1
                     <p>Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern. In her free time, Janaki enjoys going on spontaneous day trips, hiking local trails, and volunteering with community health programs. She is passionate about understanding how social and environmental factors influence health and plans to pursue a career in medicine.</p>
                 </div>
             </div>
+            <div class = "card" id = "i46">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/TrentonLau.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Trenton Lau</h2>
+                    <h2>Sophomore - Biology</h2>
+                    <p>Trenton Lau is a sophomore at the University of Washington Seattle studying biology. He joined the lab as an OR intern in autumn 2025. In his free time, Trenton enjoys cooking, finding new places to eat, and spending time with friends.</p>
+                </div>
+            </div>
             
             <!-- High School -->
             <div class = "card" id = "i15">
@@ -978,6 +988,14 @@ nav_order: 1
                                 <p>Lena is an undergraduate student at the University of Washington, double majoring in Biochemistry and Public Health–Global Health. She joined the lab in October 2025. Lena enjoys the outdoors, reading, and traveling. She plans to pursue an MD after completing her undergraduate degree!</p>
                             </div>
                         </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/TrentonLau.jpg" alt="Trenton Lau">
+                            <h4>Trenton Lau</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Trenton Lau is a sophomore at the University of Washington Seattle studying biology. He joined the lab as an OR intern in autumn 2025. In his free time, Trenton enjoys cooking, finding new places to eat, and spending time with friends.</p>
+                            </div>
+                        </div>
                         
                         <!-- Freshmen -->
                         <div class="tree-card mini" onclick="openBioModal(this)">
@@ -1346,6 +1364,11 @@ nav_order: 1
             name: 'Janaki Venkatesh',
             title: 'Sophomore - Public Health-Global Health',
             bio: 'Janaki Venkatesh is a sophomore at the University of Washington, majoring in Public Health-Global Health. She joined the lab in the spring of 2025 as an OR intern. In her free time, Janaki enjoys going on spontaneous day trips, hiking local trails, and volunteering with community health programs. She is passionate about understanding how social and environmental factors influence health and plans to pursue a career in medicine.'
+        },
+        'i46': {
+            name: 'Trenton Lau',
+            title: 'Sophomore - Biology',
+            bio: 'Trenton Lau is a sophomore at the University of Washington Seattle studying biology. He joined the lab as an OR intern in autumn 2025. In his free time, Trenton enjoys cooking, finding new places to eat, and spending time with friends.'
         },
         'i20': {
             name: 'Kiana Koloushani',
