@@ -506,6 +506,16 @@ nav_order: 1
                     <p>Olivia is a Junior at the University of Washington studying Biology. She joined Mulligan, Pal, Hwang Labs in the Spring of 2025 as a research intern. Outside of the lab, she enjoys painting, traveling, going to the beach, and learning new recipes to cook. Her long-term goal is to pursue a career in healthcare after graduating from the University of Washington.</p>
                 </div>
             </div>
+            <div class = "card" id = "i47">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/SarahOConnell.jpg"/>
+                </div>
+                <div class = "content">
+                    <h2>Sarah O'Connell</h2>
+                    <h2>Junior - Public Health-Global Health</h2>
+                    <p>Sarah is a junior at the University of Washington, majoring in Public Health-Global Health. She joined the lab in April 2025 as an OR and Biorepository intern, and hopes to pursue medical school after completing undergrad. Outside of lab, she enjoys reading, baking, and Pilates.</p>
+                </div>
+            </div>
             
             <!-- Sophomores -->
             <div class = "card" id = "i28">
@@ -912,6 +922,14 @@ nav_order: 1
                             <span class="role">Junior</span>
                             <div class="bio-data" style="display:none;">
                                 <p>Vedant is a junior at UW majoring in Molecular, Cellular, and Developmental Biology and minoring in Nutrition. He hopes to go to medical school after his undergraduate study to become a cardiologist. Outside of the lab, Vedant loves volunteering in medicine, working out with friends, going on day-trips, and being an avid member in the Husky Marching Band (Go Dawgs!).</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/SarahOConnell.jpg" alt="Sarah O'Connell">
+                            <h4>Sarah O'Connell</h4>
+                            <span class="role">Junior</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Sarah is a junior at the University of Washington, majoring in Public Health-Global Health. She joined the lab in April 2025 as an OR and Biorepository intern, and hopes to pursue medical school after completing undergrad. Outside of lab, she enjoys reading, baking, and Pilates.</p>
                             </div>
                         </div>
                         
@@ -1384,6 +1402,11 @@ nav_order: 1
             name: 'Olivia Qiao',
             title: 'Junior - Biology',
             bio: 'Olivia is a Junior at the University of Washington studying Biology. She joined Mulligan, Pal, Hwang Labs in the Spring of 2025 as a research intern. Outside of the lab, she enjoys painting, traveling, going to the beach, and learning new recipes to cook. Her long-term goal is to pursue a career in healthcare after graduating from the University of Washington.'
+        },
+        'i47': {
+            name: 'Sarah O\'Connell',
+            title: 'Junior - Public Health-Global Health',
+            bio: 'Sarah is a junior at the University of Washington, majoring in Public Health-Global Health. She joined the lab in April 2025 as an OR and Biorepository intern, and hopes to pursue medical school after completing undergrad. Outside of lab, she enjoys reading, baking, and Pilates.'
         },
         'i44': {
             name: 'Molly Woodcock',
