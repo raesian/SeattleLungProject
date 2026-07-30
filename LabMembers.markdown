@@ -459,6 +459,28 @@ nav_order: 1
                     <p>Aidan Borlet is a sophomore biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
                 </div>
             </div>
+            <div class = "card" id = "i51">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/AvaWagner.png"/>
+                </div>
+                <div class = "content">
+                    <h2>Ava Wagner</h2>
+                    <h3>Sophomore</h3>
+                    <h3>Biochemistry</h3>
+                    <p>Ava is an undergraduate student at the University of Washington on the premed track majoring in Biochemistry and minoring in Applied Math. Outside of volunteering, you can find her playing soccer, reading, or drinking matcha!</p>
+                </div>
+            </div>
+            <div class = "card" id = "i52">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/NikosHasse.png"/>
+                </div>
+                <div class = "content">
+                    <h2>Nikos Hasse</h2>
+                    <h3>Sophomore</h3>
+                    <h3>Neuroscience</h3>
+                    <p>Nikos Hasse is a sophomore at the University of Washington planning on majoring in neuroscience. He joined the lab as an intern in May of 2026. In his free time, he enjoys video editing, volleyball, cooking, and talking with friends.</p>
+                </div>
+            </div>
         `
 
         ft = `
@@ -749,6 +771,22 @@ nav_order: 1
                             <span class="role">Sophomore</span>
                             <div class="bio-data" style="display:none;">
                                 <p>Aidan Borlet is a sophomore biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/AvaWagner.png" alt="Ava Wagner">
+                            <h4>Ava Wagner</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Ava is an undergraduate student at the University of Washington on the premed track majoring in Biochemistry and minoring in Applied Math. Outside of volunteering, you can find her playing soccer, reading, or drinking matcha!</p>
+                            </div>
+                        </div>
+                        <div class="tree-card mini" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/NikosHasse.png" alt="Nikos Hasse">
+                            <h4>Nikos Hasse</h4>
+                            <span class="role">Sophomore</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Nikos Hasse is a sophomore at the University of Washington planning on majoring in neuroscience. He joined the lab as an intern in May of 2026. In his free time, he enjoys video editing, volleyball, cooking, and talking with friends.</p>
                             </div>
                         </div>
                         
@@ -1075,6 +1113,16 @@ nav_order: 1
             name: 'Aidan Borlet',
             title: 'Sophomore - Biology',
             bio: 'Aidan Borlet is a sophomore biology student at the University of Washington and joined the lab as an intern in October of 2025. Outside of the lab, he enjoys playing euphonium in the UW Wind Ensemble, watching movies, and spending time with friends and family. He hopes to attend medical school after graduation.'
+        },
+        'i51': {
+            name: 'Ava Wagner',
+            title: 'Sophomore - Biochemistry',
+            bio: 'Ava is an undergraduate student at the University of Washington on the premed track majoring in Biochemistry and minoring in Applied Math. Outside of volunteering, you can find her playing soccer, reading, or drinking matcha!'
+        },
+        'i52': {
+            name: 'Nikos Hasse',
+            title: 'Sophomore - Neuroscience',
+            bio: 'Nikos Hasse is a sophomore at the University of Washington planning on majoring in neuroscience. He joined the lab as an intern in May of 2026. In his free time, he enjoys video editing, volleyball, cooking, and talking with friends.'
         }
     };
 

@@ -335,6 +335,14 @@ footer .copyright {
   opacity: 0.7;
 }
 
+footer .site-credit {
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  opacity: 0.55;
+  text-align: center;
+}
+
 /* Utility / Sections */
 hr.small {
   max-width: 80px;
