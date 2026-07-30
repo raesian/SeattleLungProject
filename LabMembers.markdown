@@ -185,6 +185,16 @@ nav_order: 1
                     <p>Katie currently works as one of the lab's Research Technicians and has been a part of the lab since Spring 2022. Katie is currently studying the effects of immunosuppressants in relation to exosomes and lung transplantation. She is also working on a project based around viral and bacterial infections post lung transplantation. When not at the lab, Katie enjoys playing the violin, volunteering, experimenting with cooking. She completed her undergraduate degree in Molecular, Cellular, Developmental Biology with Interdisciplinary Honors at UW. She hopes to continue her education in medical school in hopes of studying pediatric surgery.</p>
                 </div>
             </div>
+            <div class = "card" id = "rs5">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/KarimGharib.png"/>
+                </div>
+                <div class = "content">
+                    <h2>Karim Gharib</h2>
+                    <h3>MS3 Medical Student</h3>
+                    <p>Karim Gharib is a third-year medical student at the University of Washington. He earned a B.A., magna cum laude with Honors in Biology, from Columbia University. His research centers on cancer immunology, with a focus on T-cell biology and immunotherapy. He is interested in pursuing a career in academic surgery, where he hopes to combine patient care with research to improve patient outcomes.</p>
+                </div>
+            </div>
         `
 
         gs = `
@@ -522,6 +532,14 @@ nav_order: 1
                             <span class="role">Laboratory Technician</span>
                             <div class="bio-data" style="display:none;">
                                 <p>Katie currently works as one of the lab's Research Technicians and has been a part of the lab since Spring 2022. Katie is currently studying the effects of immunosuppressants in relation to exosomes and lung transplantation. She is also working on a project based around viral and bacterial infections post lung transplantation. When not at the lab, Katie enjoys playing the violin, volunteering, experimenting with cooking. She completed her undergraduate degree in Molecular, Cellular, Developmental Biology with Interdisciplinary Honors at UW. She hopes to continue her education in medical school in hopes of studying pediatric surgery.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/KarimGharib.png" alt="Karim Gharib">
+                            <h4>Karim Gharib</h4>
+                            <span class="role">MS3 Medical Student</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Karim Gharib is a third-year medical student at the University of Washington. He earned a B.A., magna cum laude with Honors in Biology, from Columbia University. His research centers on cancer immunology, with a focus on T-cell biology and immunotherapy. He is interested in pursuing a career in academic surgery, where he hopes to combine patient care with research to improve patient outcomes.</p>
                             </div>
                         </div>
 
@@ -937,6 +955,11 @@ nav_order: 1
             name: 'Katie Chiu',
             title: 'Laboratory Technician',
             bio: 'Katie currently works as one of the lab\'s Research Technicians and has been a part of the lab since Spring 2022. Katie is currently studying the effects of immunosuppressants in relation to exosomes and lung transplantation. She is also working on a project based around viral and bacterial infections post lung transplantation. When not at the lab, Katie enjoys playing the violin, volunteering, experimenting with cooking. She completed her undergraduate degree in Molecular, Cellular, Developmental Biology with Interdisciplinary Honors at UW. She hopes to continue her education in medical school in hopes of studying pediatric surgery.'
+        },
+        'rs5': {
+            name: 'Karim Gharib',
+            title: 'MS3 Medical Student',
+            bio: 'Karim Gharib is a third-year medical student at the University of Washington. He earned a B.A., magna cum laude with Honors in Biology, from Columbia University. His research centers on cancer immunology, with a focus on T-cell biology and immunotherapy. He is interested in pursuing a career in academic surgery, where he hopes to combine patient care with research to improve patient outcomes.'
         },
         'i1': {
             name: 'Lucas Ivan Bjorkheim',
