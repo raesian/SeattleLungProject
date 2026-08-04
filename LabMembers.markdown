@@ -195,6 +195,16 @@ nav_order: 1
                     <p>Karim Gharib is a third-year medical student at the University of Washington. He earned a B.A., magna cum laude with Honors in Biology, from Columbia University. His research centers on cancer immunology, with a focus on T-cell biology and immunotherapy. He is interested in pursuing a career in academic surgery, where he hopes to combine patient care with research to improve patient outcomes.</p>
                 </div>
             </div>
+            <div class = "card" id = "rs6">
+                <div class = "profile">
+                    <img src="{{ site.baseurl }}/img/ChloeLee.png"/>
+                </div>
+                <div class = "content">
+                    <h2>Chloe Lee</h2>
+                    <h3>Medical Student</h3>
+                    <p>Hi! I'm Chloe Lee, a medical student at the University of Washington. I'm interested in improving the diagnosis and treatment of cardiovascular disease and am excited about research that has the potential to improve patient care. Outside of the lab, I enjoy running, biking, swimming, and cooking for my friends and family.</p>
+                </div>
+            </div>
         `
 
         gs = `
@@ -562,6 +572,14 @@ nav_order: 1
                             <span class="role">MS3 Medical Student</span>
                             <div class="bio-data" style="display:none;">
                                 <p>Karim Gharib is a third-year medical student at the University of Washington. He earned a B.A., magna cum laude with Honors in Biology, from Columbia University. His research centers on cancer immunology, with a focus on T-cell biology and immunotherapy. He is interested in pursuing a career in academic surgery, where he hopes to combine patient care with research to improve patient outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="tree-card" onclick="openBioModal(this)">
+                            <img src="{{ site.baseurl }}/img/ChloeLee.png" alt="Chloe Lee">
+                            <h4>Chloe Lee</h4>
+                            <span class="role">Medical Student</span>
+                            <div class="bio-data" style="display:none;">
+                                <p>Hi! I'm Chloe Lee, a medical student at the University of Washington. I'm interested in improving the diagnosis and treatment of cardiovascular disease and am excited about research that has the potential to improve patient care. Outside of the lab, I enjoy running, biking, swimming, and cooking for my friends and family.</p>
                             </div>
                         </div>
 
@@ -998,6 +1016,11 @@ nav_order: 1
             name: 'Karim Gharib',
             title: 'MS3 Medical Student',
             bio: 'Karim Gharib is a third-year medical student at the University of Washington. He earned a B.A., magna cum laude with Honors in Biology, from Columbia University. His research centers on cancer immunology, with a focus on T-cell biology and immunotherapy. He is interested in pursuing a career in academic surgery, where he hopes to combine patient care with research to improve patient outcomes.'
+        },
+        'rs6': {
+            name: 'Chloe Lee',
+            title: 'Medical Student',
+            bio: 'Hi! I\'m Chloe Lee, a medical student at the University of Washington. I\'m interested in improving the diagnosis and treatment of cardiovascular disease and am excited about research that has the potential to improve patient care. Outside of the lab, I enjoy running, biking, swimming, and cooking for my friends and family.'
         },
         'i1': {
             name: 'Lucas Ivan Bjorkheim',
